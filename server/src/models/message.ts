@@ -11,7 +11,7 @@ export interface IMessage extends Document {
 
 // create schema for the above interface 
 const messageSchema: Schema = new Schema<IMessage>({
-    user: {type: String, requred: true}, 
+    user: {type: String, required: true}, 
     message: {type: String, required: true},
     type: {type: String, enum: ['text', 'image', 'file'], default: 'text'},
 }, {

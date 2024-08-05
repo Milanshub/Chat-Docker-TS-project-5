@@ -1,0 +1,23 @@
+2024-08-02T14:15:54.957Z [[31merror[39m]: Failed to start server: Cannot read properties of undefined (reading 'startsWith')
+2024-08-02T14:55:21.305Z [[31merror[39m]: Failed to start server: Cannot read properties of undefined (reading 'startsWith')
+2024-08-02T14:57:24.009Z [[31merror[39m]: Failed to start server: Cannot read properties of undefined (reading 'startsWith')
+2024-08-02T15:00:46.226Z [[32minfo[39m]: Server is running on port 3000
+2024-08-02T15:10:13.392Z [[32minfo[39m]: Server is running on port 3000
+2024-08-02T15:19:02.520Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T05:56:49.002Z [[31merror[39m]: Failed to start server: querySrv ENOTFOUND _mongodb._tcp.cluster0.yxundys.mongodb.net
+2024-08-05T05:58:45.832Z [[31merror[39m]: Failed to start server: mongodb+srv URI cannot have port number
+2024-08-05T06:06:25.289Z [[31merror[39m]: Failed to start server: mongodb+srv URI cannot have port number
+2024-08-05T06:15:08.708Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T06:24:47.373Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T06:34:18.235Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T06:47:07.037Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T07:07:39.002Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T07:09:55.123Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T07:17:16.664Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T07:20:15.288Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T07:25:53.574Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T07:29:09.078Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T07:36:36.381Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T07:50:30.691Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T07:53:43.423Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T07:59:18.732Z [[32minfo[39m]: Server is running on port 3000

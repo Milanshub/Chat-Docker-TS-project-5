@@ -8,6 +8,8 @@ dotenv.config();
 // connect to mongodb URI 
 const uri = process.env.MONGODB_URI!;
 
+
+
 // Asynchronous arrow function to connect to MongoDB and use that function elsewhere in the app 
 export const connectToMongoDb = async () => {
     const client = new MongoClient(uri);
