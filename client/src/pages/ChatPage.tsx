@@ -1,46 +1,82 @@
-import { useEffect, useState } from "react";
-// exposing live chat connection 
-import { io, Socket } from "socket.io-client";
+import React, { useEffect, useState } from 'react';
+import { io, Socket } from 'socket.io-client';
 import { TextField, Button, List, ListItem, ListItemText } from '@mui/material';
-import { logger } from "@/utils/logger";
+import { logger } from '@/utils/logger';
+import { fetchMessages, createMessage } from '@/services/chatService';
+import { IMessage } from '@/models/IMessage'; 
 
-const socket: Socket = io('http://localhost:3000'); 
+// connects to the server where WenSocket is running 
+const socket: Socket = io(`${process.env.BACKEND_URL}`); 
 
 const ChatPage: React.FC = () => {
-    const [message, setMessage]= useState(""); 
-    const [messages, setMessages] = useState<string[]>([]); 
+    // stores value of user message 
+    const [message, setMessage] = useState<string>(''); 
+    // stores list of messages from the backend 
+    const [messages, setMessages] = useState<IMessage[]>([]); 
 
     useEffect(() => {
         logger.info('ChatPage component mounted'); 
 
-        socket.on('chat message', (msg: string) => {
-            logger.info('Received chat message' + msg); 
-            setMessages((setMessages) => [...prevMessages, msg]); 
+        // Fetch initial messages
+        const loadMessages = async () => {
+            try {
+                const initialMessages = await fetchMessages();
+                setMessages(initialMessages);
+            } catch (error) {
+                logger.error('Error loading messages:', error);
+            }
+        };
+
+        loadMessages();
+
+        // Sets up a listener for incoming chat messages from the WebSocket server.
+        socket.on('chat message', (msg: IMessage) => {
+            logger.info('Received chat message:', msg); 
+            setMessages((prevMessages) => [...prevMessages, msg]); 
         }); 
 
-        return () => {}
-    })
+        return () => {
+            socket.off('chat message');
+            logger.info('ChatPage component unmounted');
+        };
+    }, []);
+    
+
+    const handleSendMessage = async () => {
+        if (message.trim()) {
+            const newMessage: IMessage = {
+                user: 'user1', // Replace with actual user info
+                message,
+                type: 'text'
+            };
+
+            socket.emit('chat message', newMessage);
+            await createMessage(newMessage.user, newMessage.message, newMessage.type);
+            logger.info('Sent chat message:', newMessage); 
+            setMessage(''); 
+        }
+    };
 
     return (
         <div style={{ width: '80%', margin: 'auto', padding: '20px' }}>
             <List>
                 {messages.map((msg, index) => (
                     <ListItem key={index}>
-                        <ListItemText primary={msg} />
+                        <ListItemText primary={msg.message} secondary={`User: ${msg.user} | Type: ${msg.type}`} />
                     </ListItem>
                 ))}
             </List>
             <TextField 
-                 value={message}
-                 onChange={(e) => setMessage(e.target.value)}
-                 label="Message"
-                 fullWidth
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                label="Message"
+                fullWidth
             />
             <Button onClick={handleSendMessage} variant="contained" color="primary">
-                 Send
+                Send
             </Button>
         </div>
     ); 
 }; 
 
-export default ChatPage; 
+export default ChatPage;
