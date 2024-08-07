@@ -1,0 +1,6 @@
+2024-08-07T15:12:51.421Z [[32minfo[39m]: ChatPage component mounted
+2024-08-07T15:12:51.505Z [[32minfo[39m]: ChatPage component unmounted
+2024-08-07T15:16:56.559Z [[32minfo[39m]: ChatPage component mounted
+2024-08-07T15:16:56.736Z [[31merror[39m]: Error fetching messages: Network Error
+2024-08-07T15:16:56.736Z [[31merror[39m]: Error loading messages: Network Error
+2024-08-07T15:16:57.608Z [[32minfo[39m]: ChatPage component unmounted

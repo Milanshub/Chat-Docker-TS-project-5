@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { logger } from '@/utils/logger';
-import { IMessage } from '@/models/IMessage'; 
+import log from '../utils/logger'; // Use loglevel for logging
+import { IMessage } from '../models/IMessage'; 
 
 const API_URL = process.env.API_URL; 
 
@@ -9,7 +9,7 @@ export const fetchMessages = async (): Promise<IMessage[]> => {
         const response = await axios.get(`${API_URL}/messages`);
         return response.data;
     } catch (error) {
-        logger.error('Error fetching messages:', error);
+        log.error('Error fetching messages:', error);
         throw error;
     }
 };
@@ -19,7 +19,7 @@ export const fetchMessageById = async (id: string): Promise<IMessage> => {
         const response = await axios.get(`${API_URL}/messages/${id}`);
         return response.data;
     } catch (error) {
-        logger.error(`Error fetching message with ID ${id}:`, error);
+        log.error(`Error fetching message with ID ${id}:`, error);
         throw error;
     }
 };
@@ -29,7 +29,7 @@ export const createMessage = async (user: string, message: string, type?: 'text'
         const response = await axios.post(`${API_URL}/messages`, { user, message, type });
         return response.data;
     } catch (error) {
-        logger.error('Error creating message:', error);
+        log.error('Error creating message:', error);
         throw error;
     }
 };
@@ -39,7 +39,7 @@ export const updateMessage = async (id: string, updates: Partial<IMessage>): Pro
         const response = await axios.put(`${API_URL}/messages/${id}`, updates);
         return response.data;
     } catch (error) {
-        logger.error(`Error updating message with ID ${id}:`, error);
+        log.error(`Error updating message with ID ${id}:`, error);
         throw error;
     }
 };
@@ -48,7 +48,7 @@ export const deleteMessage = async (id: string): Promise<void> => {
     try {
         await axios.delete(`${API_URL}/messages/${id}`);
     } catch (error) {
-        logger.error(`Error deleting message with ID ${id}:`, error);
+        log.error(`Error deleting message with ID ${id}:`, error);
         throw error;
     }
 };

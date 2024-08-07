@@ -1,0 +1,35 @@
+/* App.css */
+
+.app-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message-list {
+    margin-bottom: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .message-list-item {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .message-list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .text-field {
+    margin-bottom: 10px;
+  }
+  
+  .send-button {
+    display: block;
+    width: 100%;
+  }
+  

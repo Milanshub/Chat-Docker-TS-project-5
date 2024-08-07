@@ -1,16 +1,13 @@
-import { createLogger, format, transports } from "winston";
+import log from 'loglevel';
 
-export const logger = createLogger({
-    level: 'info', // Default log level
-    format: format.combine(
-      format.colorize(), // Add color to the log levels
-      format.timestamp(), // Add timestamp to logs
-      format.printf(({ timestamp, level, message }) => {
-        return `${timestamp} [${level}]: ${message}`; // Format log messages
-      })
-    ),
-    transports: [
-      new transports.Console(), // Log to console
-      new transports.File({ filename: 'combined.log' }) // Log to file
-    ],
-  });
+// Set default log level
+log.setLevel('info');
+
+// Optionally, you can configure loglevel to display colors for different log levels
+log.getLogger('root').setLevel('info');
+
+// Custom logging functions
+export const logInfo = (message: string) => log.info(message);
+export const logError = (message: string) => log.error(message);
+
+export default log;
