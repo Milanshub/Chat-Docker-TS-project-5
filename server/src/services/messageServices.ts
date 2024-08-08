@@ -1,5 +1,6 @@
 import { Message, IMessage } from "../models/message";
 import { Types } from "mongoose";
+import { logger } from "../utils/logger";
 
 //code provides CRUD (Create, Read, Update, Delete) operations for a Message model in a MongoDB database using Mongoose.
 
@@ -10,7 +11,7 @@ export const getAllMessages = async (): Promise<IMessage[]> => {
         const messages = await Message.find().sort({createdAt: -1}).exec(); 
         return messages; 
     } catch (error){
-        console.error('Error fetching messages:', error);
+        logger.error('Error fetching messages:', error);
         throw new Error("Unable to fetch messages"); 
     }
 }; 
@@ -27,7 +28,7 @@ export const getMessageById = async (id: string): Promise<IMessage | null> => {
         const message = await Message.findById(id).exec();
         return message;  
     } catch (error) {
-        console.log("Error fetching message by ID:", error); 
+        logger.info("Error fetching message by ID:", error); 
         throw new Error("Unable to fetch message"); 
     }
 }; 
@@ -48,7 +49,7 @@ export const createMessage = async (
         const savedMessage = await newMessage.save(); 
         return savedMessage; 
     } catch (error) {
-        console.log("Error creating message:", error); 
+        logger.info("Error creating message:", error); 
         throw new Error("Unable to create new message"); 
     }
 }; 
@@ -67,7 +68,7 @@ export const updateMessage = async (
         const updatedMessage = await Message.findByIdAndUpdate(id, updates, {new:true}).exec()
         return updatedMessage
     } catch(error){
-        console.log("Error updating message:", error); 
+        logger.info("Error updating message:", error); 
         throw new Error("Unable to update message"); 
     }
 }
@@ -82,7 +83,7 @@ export const deleteMessage = async (id: string): Promise<IMessage | null> => {
         const deletedMessage = await Message.findByIdAndDelete().exec(); 
         return deletedMessage; 
     } catch(error){
-        console.log("Error deleting message:", error); 
+        logger.info("Error deleting message:", error); 
         throw new Error("Unable to delete message")
     }
 }; 

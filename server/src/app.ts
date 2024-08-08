@@ -1,21 +1,26 @@
 import express from "express";
 import http from "http"; 
-import mongoose from "mongoose";
 import dotenv from "dotenv"; 
 import { setupSocketIO } from "./utils/socketUtils";
 import { logger } from "./utils/logger";
 import router from "./routes/messageRouters";
 import { errorHandling } from "./middlewares/errorHandler";
 import { connectToMongoDb } from "./config/dbConfig";
+import cors from "cors"; 
 
-// Initilize dotenv 
-dotenv.config(); 
+dotenv.config();
 
-// Initialize express application 
-const app = express(); 
-const server = http.createServer(app); 
+const app = express();
+const server = http.createServer(app);
 
-app.use(express.json()); 
+// CORS configuration
+app.use(cors({
+    origin: 'http://localhost:3000', // Your frontend URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+}));
+
+app.use(express.json());
 
 // Connect to MongoDB
 connectToMongoDb()
@@ -34,7 +39,11 @@ connectToMongoDb()
         server.listen(PORT, () => {
             logger.info(`Server is running on port ${PORT}`);
         });
+
+        // Optionally store the MongoDB client if needed elsewhere
+        (global as any).mongoClient = client; // Or another way to store it globally
     })
     .catch(error => {
         logger.error('Failed to start server:', error);
+        process.exit(1); // Exit the process if unable to connect
     });

@@ -1,26 +1,22 @@
-import { MongoClient } from "mongodb";
-import dotenv from "dotenv"; 
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import { logger } from '../utils/logger';
 
+dotenv.config();
 
-// connect to dotenv 
-dotenv.config(); 
-
-// connect to mongodb URI 
 const uri = process.env.MONGODB_URI!;
 
-
-
-// Asynchronous arrow function to connect to MongoDB and use that function elsewhere in the app 
 export const connectToMongoDb = async () => {
-    const client = new MongoClient(uri);
     try {
-        await client.connect(); 
-        console.log("Connected to MongoDB Atlas"); 
-        
-        return client; 
+        await mongoose.connect(uri, {
+            serverSelectionTimeoutMS: 60000, // Timeout for server selection
+            connectTimeoutMS: 60000, // Timeout for establishing a connection
+            socketTimeoutMS: 60000, // Timeout for socket inactivity
+            bufferCommands: false, // Disable buffering
+        });
+        logger.info("Connected to MongoDB Atlas");
     } catch (error) {
-        console.log(`Error connecting to MongoDB Atlas: ${error}`); 
-        throw error; 
+        logger.error(`Error connecting to MongoDB Atlas: ${error}`);
+        throw error;
     }
-}
-
+};

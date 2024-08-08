@@ -21,3 +21,60 @@
 2024-08-05T07:50:30.691Z [[32minfo[39m]: Server is running on port 3000
 2024-08-05T07:53:43.423Z [[32minfo[39m]: Server is running on port 3000
 2024-08-05T07:59:18.732Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T08:23:40.832Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T08:24:33.339Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T08:28:41.616Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T08:35:04.240Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T08:39:38.426Z [[32minfo[39m]: Server is running on port 3000
+2024-08-05T10:00:33.949Z [[32minfo[39m]: Server is running on port 3000
+2024-08-07T11:49:52.192Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-07T11:49:52.212Z [[32minfo[39m]: Server is running on port 3000
+2024-08-07T12:18:10.826Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-07T12:18:10.835Z [[32minfo[39m]: Server is running on port 5000
+2024-08-07T15:58:40.094Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-07T15:58:40.099Z [[32minfo[39m]: Server is running on port 5000
+2024-08-08T09:26:59.780Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-08T09:26:59.796Z [[32minfo[39m]: Server is running on port 5000
+2024-08-08T09:58:17.473Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-08T09:58:17.485Z [[32minfo[39m]: Server is running on port 5000
+2024-08-08T09:58:49.035Z [[32minfo[39m]: A user connected
+2024-08-08T09:59:23.710Z [[32minfo[39m]: User disconnected
+2024-08-08T09:59:25.199Z [[32minfo[39m]: A user connected
+2024-08-08T09:59:58.009Z [[32minfo[39m]: User disconnected
+2024-08-08T09:59:59.115Z [[32minfo[39m]: A user connected
+2024-08-08T10:02:47.462Z [[32minfo[39m]: User disconnected
+2024-08-08T10:02:49.677Z [[32minfo[39m]: A user connected
+2024-08-08T10:03:02.294Z [[32minfo[39m]: Message received: hello 
+2024-08-08T10:03:11.561Z [[32minfo[39m]: Message received: how are you?
+2024-08-08T10:03:44.655Z [[32minfo[39m]: Message received: how are you my friend?
+2024-08-08T10:03:52.143Z [[32minfo[39m]: User disconnected
+2024-08-08T10:03:53.155Z [[32minfo[39m]: A user connected
+2024-08-08T10:04:09.568Z [[32minfo[39m]: Message received: hi
+2024-08-08T10:04:41.214Z [[32minfo[39m]: Message received: hi
+2024-08-08T10:09:02.659Z [[32minfo[39m]: User disconnected
+2024-08-08T10:31:29.492Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-08T10:31:29.502Z [[32minfo[39m]: Server is running on port 5000
+2024-08-08T10:54:14.269Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-08T10:54:14.279Z [[32minfo[39m]: Server is running on port 5000
+2024-08-08T10:54:53.484Z [[32minfo[39m]: A user connected
+2024-08-08T10:55:11.461Z [[32minfo[39m]: Message received: milan
+2024-08-08T10:55:38.291Z [[32minfo[39m]: Message received: you ok?
+2024-08-08T10:55:50.924Z [[32minfo[39m]: Message received: or not
+2024-08-08T10:58:06.821Z [[32minfo[39m]: A user connected
+2024-08-08T10:58:29.402Z [[32minfo[39m]: User disconnected
+2024-08-08T10:58:29.403Z [[32minfo[39m]: User disconnected
+2024-08-08T10:58:30.758Z [[32minfo[39m]: A user connected
+2024-08-08T10:58:48.719Z [[32minfo[39m]: Message received: hi
+2024-08-08T11:03:34.012Z [[32minfo[39m]: Message received: hi
+2024-08-08T11:03:37.889Z [[32minfo[39m]: Message received: hi
+2024-08-08T11:03:51.357Z [[32minfo[39m]: Message received: hi
+2024-08-08T11:03:53.280Z [[32minfo[39m]: Message received: hi
+2024-08-08T11:04:14.062Z [[32minfo[39m]: Message received: hi
+2024-08-08T11:04:17.294Z [[32minfo[39m]: Message received: hi
+2024-08-08T11:27:18.433Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-08T11:27:18.441Z [[32minfo[39m]: Server is running on port 5000
+2024-08-08T11:27:57.085Z [[32minfo[39m]: A user connected
+2024-08-08T11:28:38.121Z [[32minfo[39m]: Message received: How are you mongo
+2024-08-08T11:30:26.367Z [[32minfo[39m]: User disconnected
+2024-08-08T11:30:27.287Z [[32minfo[39m]: A user connected
+2024-08-08T11:30:37.855Z [[32minfo[39m]: Message received: hi

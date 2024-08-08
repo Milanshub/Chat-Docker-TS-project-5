@@ -1,23 +1,28 @@
-// allows live chat communication 
 import { Server } from "socket.io";
+import { logger } from "./logger";
 
-// Function to set up Socket.IO
+// Function to set up Socket.IO with CORS
 export const setupSocketIO = (server: any) => {
-    const io = new Server(server); // Create a new Socket.IO server
+    const io = new Server(server, {
+        cors: {
+            origin: "http://localhost:3000", // Update with your frontend's origin
+            methods: ["GET", "POST"]
+        }
+    });
 
     // Event listener for new connections
     io.on('connection', (socket) => {
-        console.log('A user connected'); 
+        logger.info('A user connected'); 
 
         // Handle incoming messages
         socket.on('message', (msg: string) => {
-            console.log('Message received:', msg); 
+            logger.info('Message received:', msg); 
             io.emit('message', msg);
         }); 
 
         // Handle disconnections
         socket.on('disconnect', () => {
-            console.log("User disconnected");
+            logger.info("User disconnected");
         });
     });
 

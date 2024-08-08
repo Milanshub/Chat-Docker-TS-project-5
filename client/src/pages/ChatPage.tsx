@@ -6,7 +6,9 @@ import { fetchMessages, createMessage } from '../services/chatService';
 import { IMessage } from '../models/IMessage'; 
 import '../App.css'; 
 
-const socket: Socket = io(`${process.env.BACKEND_URL}`);
+const socket: Socket = io('http://localhost:5000', {
+    transports: ["websocket"], // Force WebSocket connection
+});
 
 const ChatPage: React.FC = () => {
     const [username, setUsername] = useState<string>(''); 
@@ -28,13 +30,14 @@ const ChatPage: React.FC = () => {
 
         loadMessages();
 
-        socket.on('chat message', (msg: IMessage) => {
-            log.info('Received chat message:', msg);
+        // Listen for 'message' event from the server
+        socket.on('message', (msg: IMessage) => {
+            log.info('Received message:', msg);
             setMessages((prevMessages) => [...prevMessages, msg]);
         });
 
         return () => {
-            socket.off('chat message');
+            socket.off('message');
             log.info('ChatPage component unmounted');
         };
     }, []);
@@ -44,7 +47,7 @@ const ChatPage: React.FC = () => {
             setIsUsernameSet(true);
             log.info('Username set:', username);
         } else {
-            log.warn('Username is empty.');
+            log.error('Username is empty.');
         }
     };
 
@@ -55,17 +58,20 @@ const ChatPage: React.FC = () => {
                 message,
                 type: 'text'
             };
-
+    
             try {
-                socket.emit('chat message', newMessage);
-                await createMessage(newMessage.user, newMessage.message, newMessage.type);
-                log.info('Sent chat message:', newMessage);
+                console.log('Sending message:', newMessage); // Debugging line
+                socket.emit('message', newMessage);
+    
+                // Make sure createMessage uses the correct API URL
+                const response = await createMessage(newMessage.user, newMessage.message, newMessage.type);
+                console.log('Message saved response:', response); // Debugging line
                 setMessage('');
             } catch (error) {
-                log.error('Error sending message:', error);
+                console.error('Error sending message:', error);
             }
         } else {
-            log.warn('Message not sent. Username or message is empty.');
+            console.warn('Message not sent. Username or message is empty.');
         }
     };
 
