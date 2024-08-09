@@ -1,20 +1,24 @@
+// src/pages/ChatPage.tsx
+
 import React, { useEffect, useState } from 'react';
 import { io, Socket } from 'socket.io-client';
-import { TextField, Button, List, ListItem, ListItemText } from '@mui/material';
-import log from '../utils/logger'; // Use loglevel for logging
+import { TextField, Button, List, ListItem, ListItemText, Container, Typography } from '@mui/material';
+import log from '../utils/logger';
 import { fetchMessages, createMessage } from '../services/chatService';
-import { IMessage } from '../models/IMessage'; 
-import '../App.css'; 
+import { IMessage } from '../models/IMessage';
+import RoomSelection from '../components/RoomSelection';
+import '../App.css';
 
 const socket: Socket = io('http://localhost:5000', {
-    transports: ["websocket"], // Force WebSocket connection
+    transports: ["websocket"],
 });
 
 const ChatPage: React.FC = () => {
     const [username, setUsername] = useState<string>(''); 
     const [message, setMessage] = useState<string>(''); 
     const [messages, setMessages] = useState<IMessage[]>([]); 
-    const [isUsernameSet, setIsUsernameSet] = useState<boolean>(false); 
+    const [isInRoom, setIsInRoom] = useState<boolean>(false);
+    const [room, setRoom] = useState<string>('default-room'); 
 
     useEffect(() => {
         log.info('ChatPage component mounted');
@@ -30,25 +34,27 @@ const ChatPage: React.FC = () => {
 
         loadMessages();
 
-        // Listen for 'message' event from the server
-        socket.on('message', (msg: IMessage) => {
-            log.info('Received message:', msg);
-            setMessages((prevMessages) => [...prevMessages, msg]);
-        });
+        if (isInRoom) {
+            // Listen for 'message' event from the server
+            socket.on('message', (msg: IMessage) => {
+                log.info('Received message:', msg);
+                setMessages((prevMessages) => [...prevMessages, msg]);
+            });
 
-        return () => {
-            socket.off('message');
-            log.info('ChatPage component unmounted');
-        };
-    }, []);
-
-    const handleSetUsername = () => {
-        if (username.trim()) {
-            setIsUsernameSet(true);
-            log.info('Username set:', username);
-        } else {
-            log.error('Username is empty.');
+            return () => {
+                socket.off('message');
+                log.info('ChatPage component unmounted');
+            };
         }
+    }, [isInRoom]);
+
+    const handleJoinRoom = (username: string, room: string) => {
+        setUsername(username);
+        setRoom(room);
+        setIsInRoom(true);
+
+        // Emit the joinRoom event
+        socket.emit('joinRoom', { username, room });
     };
 
     const handleSendMessage = async () => {
@@ -60,12 +66,11 @@ const ChatPage: React.FC = () => {
             };
     
             try {
-                console.log('Sending message:', newMessage); // Debugging line
+                console.log('Sending message:', newMessage); 
                 socket.emit('message', newMessage);
     
-                // Make sure createMessage uses the correct API URL
                 const response = await createMessage(newMessage.user, newMessage.message, newMessage.type);
-                console.log('Message saved response:', response); // Debugging line
+                console.log('Message saved response:', response); 
                 setMessage('');
             } catch (error) {
                 console.error('Error sending message:', error);
@@ -77,25 +82,11 @@ const ChatPage: React.FC = () => {
 
     return (
         <div className="app-container">
-            {!isUsernameSet ? (
-                <div className="text-field">
-                    <TextField
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                        label="Enter Username"
-                        fullWidth
-                    />
-                    <Button
-                        onClick={handleSetUsername}
-                        variant="contained"
-                        color="primary"
-                        className="send-button"
-                    >
-                        Set Username
-                    </Button>
-                </div>
+            {!isInRoom ? (
+                <RoomSelection onJoin={handleJoinRoom} />
             ) : (
-                <div>
+                <Container className="chat-container">
+                    <Typography variant="h5" gutterBottom>Room: {room}</Typography>
                     <List className="message-list">
                         {messages.map((msg, index) => (
                             <ListItem key={index} className="message-list-item">
@@ -103,22 +94,24 @@ const ChatPage: React.FC = () => {
                             </ListItem>
                         ))}
                     </List>
-                    <TextField
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        label="Message"
-                        fullWidth
-                        className="text-field"
-                    />
-                    <Button
-                        onClick={handleSendMessage}
-                        variant="contained"
-                        color="primary"
-                        className="send-button"
-                    >
-                        Send
-                    </Button>
-                </div>
+                    <div className="message-input-container">
+                        <TextField
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            label="Message"
+                            fullWidth
+                            className="text-field"
+                        />
+                        <Button
+                            onClick={handleSendMessage}
+                            variant="contained"
+                            color="primary"
+                            className="send-button"
+                        >
+                            Send
+                        </Button>
+                    </div>
+                </Container>
             )}
         </div>
     );

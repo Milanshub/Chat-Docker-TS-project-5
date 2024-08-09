@@ -78,3 +78,39 @@
 2024-08-08T11:30:26.367Z [[32minfo[39m]: User disconnected
 2024-08-08T11:30:27.287Z [[32minfo[39m]: A user connected
 2024-08-08T11:30:37.855Z [[32minfo[39m]: Message received: hi
+2024-08-08T19:29:08.731Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-08T19:29:08.749Z [[32minfo[39m]: Server is running on port 5000
+2024-08-08T19:29:09.128Z [[32minfo[39m]: A user connected
+2024-08-08T19:30:14.839Z [[32minfo[39m]: User disconnected
+2024-08-08T19:30:16.586Z [[32minfo[39m]: A user connected
+2024-08-08T19:30:36.376Z [[32minfo[39m]: Message received: hi, im Angelica!
+2024-08-09T11:01:32.620Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-09T11:01:32.635Z [[32minfo[39m]: Server is running on port 5000
+2024-08-09T11:01:57.303Z [[32minfo[39m]: A user connected
+2024-08-09T11:02:20.399Z [[32minfo[39m]: Milan joined room: 1
+2024-08-09T11:02:50.412Z [[32minfo[39m]: A user connected
+2024-08-09T11:02:58.268Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-09T11:06:52.641Z [[32minfo[39m]: A user connected
+2024-08-09T11:06:52.655Z [[32minfo[39m]: A user connected
+2024-08-09T11:06:56.558Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-09T11:07:01.635Z [[32minfo[39m]: Milan left the room: 1
+2024-08-09T11:07:02.248Z [[32minfo[39m]: A user connected
+2024-08-09T11:10:57.478Z [[32minfo[39m]: A user connected
+2024-08-09T11:12:29.633Z [[32minfo[39m]: A user connected
+2024-08-09T11:12:36.889Z [[32minfo[39m]: Milan joined room: 1
+2024-08-09T11:17:24.739Z [[32minfo[39m]: Message received: Hi there 
+2024-08-09T11:17:31.938Z [[32minfo[39m]: A user connected
+2024-08-09T11:17:35.845Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-09T11:17:45.853Z [[32minfo[39m]: Message received: Hi, Milan
+2024-08-09T11:17:56.166Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-09T11:17:56.382Z [[32minfo[39m]: A user connected
+2024-08-09T11:18:56.821Z [[32minfo[39m]: Milan left the room: 1
+2024-08-09T11:18:57.222Z [[32minfo[39m]: A user connected
+2024-08-09T11:19:05.669Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-09T11:19:15.717Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-09T11:19:15.978Z [[32minfo[39m]: A user connected
+2024-08-09T11:19:21.725Z [[32minfo[39m]: Angelica joined room: 2
+2024-08-09T11:23:11.361Z [[32minfo[39m]: A user connected
+2024-08-09T11:23:13.109Z [[32minfo[39m]: Angelica left the room: 2
+2024-08-09T11:23:19.531Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-09T11:23:24.119Z [[32minfo[39m]: Message received: heya 
