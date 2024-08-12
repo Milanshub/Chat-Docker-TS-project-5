@@ -1,22 +1,21 @@
-// router allows to handel routes
 import { Router } from "express";
-import * as taskController from "../controllers/messageController"; 
+import * as messageController from "../controllers/messageController";
 
-const router: Router = Router(); 
+const router: Router = Router();
 
-// defines GET route at messages, then goes through controller and lastly makes a service call getAllMesssages()
-router.get('/messages', taskController.getAllMessagesController);
+// Route to get all messages for a specific room
+router.get('/messages', messageController.getAllMessagesController);
 
-// defines GET route at messages, then goes through controller and lastly makes a service call getAllMesssagesById()
-router.get('/messages/:id', taskController.getMessagesByIdController); 
+// Route to get a message by its ID
+router.get('/messages/:id', messageController.getMessagesByIdController); 
 
-//defines POST route at messages, then goes through controller and lastly makes a service call createMessage()
-router.post('/messages', taskController.createMessageController); 
+// Route to create a new message
+router.post('/messages', messageController.createMessageController); 
 
-// defines PUT route at messages, then goes through controller and lastly makes a service call updateMessage()
-router.put('/messages/:id', taskController.updateMessageController); 
+// Route to update a message
+router.put('/messages/:id', messageController.updateMessageController); 
 
-// defines DELETE route at messages, then goes through controller and lastly makes a service call deleteMessage()
-router.delete('/messages/:id', taskController.deleteMessageController); 
+// Route to delete a message
+router.delete('/messages/:id', messageController.deleteMessageController); 
 
-export default router; 
+export default router;

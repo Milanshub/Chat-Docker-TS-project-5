@@ -114,3 +114,102 @@
 2024-08-09T11:23:13.109Z [[32minfo[39m]: Angelica left the room: 2
 2024-08-09T11:23:19.531Z [[32minfo[39m]: Angelica joined room: 1
 2024-08-09T11:23:24.119Z [[32minfo[39m]: Message received: heya 
+2024-08-09T12:32:39.319Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-09T12:32:39.330Z [[32minfo[39m]: Server is running on port 5000
+2024-08-09T12:32:42.645Z [[32minfo[39m]: A user connected
+2024-08-09T12:33:10.838Z [[32minfo[39m]: A user connected
+2024-08-09T12:33:17.873Z [[32minfo[39m]: Milan joined room: 1
+2024-08-09T12:33:26.447Z [[32minfo[39m]: A user connected
+2024-08-09T12:33:30.777Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-09T12:33:36.377Z [[32minfo[39m]: Message received: hi 
+2024-08-09T12:33:36.452Z [[31merror[39m]: Error creating message: Message validation failed: type: `1` is not a valid enum value for path `type`.
+2024-08-09T12:33:41.057Z [[32minfo[39m]: Message received: hi
+2024-08-09T12:33:41.070Z [[31merror[39m]: Error creating message: Message validation failed: type: `1` is not a valid enum value for path `type`.
+2024-08-09T12:33:59.890Z [[32minfo[39m]: Milan left the room: 1
+2024-08-09T12:34:00.165Z [[32minfo[39m]: A user connected
+2024-08-09T12:34:11.121Z [[32minfo[39m]: Milan joined room: 2
+2024-08-09T12:34:15.368Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-09T12:34:15.683Z [[32minfo[39m]: A user connected
+2024-08-09T12:34:20.859Z [[32minfo[39m]: Angelica joined room: 2
+2024-08-09T12:34:29.285Z [[32minfo[39m]: Message received: hi love
+2024-08-09T12:34:29.319Z [[31merror[39m]: Error creating message: Message validation failed: type: `2` is not a valid enum value for path `type`.
+2024-08-09T12:34:38.946Z [[32minfo[39m]: Message received: hi babe
+2024-08-09T12:34:38.994Z [[31merror[39m]: Error creating message: Message validation failed: type: `2` is not a valid enum value for path `type`.
+2024-08-09T12:34:48.204Z [[32minfo[39m]: Angelica left the room: 2
+2024-08-09T12:34:48.587Z [[32minfo[39m]: A user connected
+2024-08-09T12:34:53.370Z [[32minfo[39m]: Milan joined room: 1
+2024-08-09T12:34:59.653Z [[32minfo[39m]: Milan left the room: 1
+2024-08-09T12:34:59.835Z [[32minfo[39m]: A user connected
+2024-08-09T12:35:06.230Z [[32minfo[39m]: Milan joined room: 2
+2024-08-09T12:35:09.027Z [[32minfo[39m]: Milan left the room: 2
+2024-08-09T12:35:09.571Z [[32minfo[39m]: A user connected
+2024-08-09T12:36:16.773Z [[32minfo[39m]: Milan left the room: 2
+2024-08-09T12:36:17.906Z [[32minfo[39m]: A user connected
+2024-08-09T12:36:22.839Z [[32minfo[39m]: Angelica joined room: 2
+2024-08-09T12:36:35.079Z [[32minfo[39m]: Message received: hi
+2024-08-09T12:36:35.113Z [[31merror[39m]: Error creating message: Message validation failed: type: `2` is not a valid enum value for path `type`.
+2024-08-09T12:36:53.418Z [[32minfo[39m]: Angelica left the room: 2
+2024-08-09T12:36:54.431Z [[32minfo[39m]: A user connected
+2024-08-09T12:37:34.704Z [[32minfo[39m]: Milan joined room: 1
+2024-08-09T12:37:41.568Z [[32minfo[39m]: Message received: hi
+2024-08-09T12:37:41.647Z [[31merror[39m]: Error creating message: Message validation failed: type: `1` is not a valid enum value for path `type`.
+2024-08-09T12:42:05.671Z [[32minfo[39m]: Milan left the room: 1
+2024-08-09T12:42:06.595Z [[32minfo[39m]: A user connected
+2024-08-09T12:42:06.604Z [[32minfo[39m]: A user connected
+2024-08-09T15:07:56.306Z [[32minfo[39m]: A user connected
+2024-08-09T15:07:57.254Z [[32minfo[39m]: A user connected
+2024-08-09T15:17:56.352Z [[32minfo[39m]: A user connected
+2024-08-09T15:17:56.364Z [[32minfo[39m]: A user connected
+2024-08-09T15:52:07.552Z [[31merror[39m]: Error creating message: Message validation failed: type: `1` is not a valid enum value for path `type`.
+2024-08-12T09:41:38.370Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T09:41:38.379Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T09:41:54.886Z [[32minfo[39m]: A user connected
+2024-08-12T09:42:00.000Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T09:42:10.638Z [[32minfo[39m]: Message received: heya
+2024-08-12T09:42:10.717Z [[31merror[39m]: Error creating message: Message validation failed: type: `1` is not a valid enum value for path `type`.
+2024-08-12T09:52:14.125Z [[31merror[39m]: Error creating message: Message validation failed: type: `1` is not a valid enum value for path `type`.
+2024-08-12T09:52:29.673Z [[31merror[39m]: Error creating message: User, message, and room are required
+2024-08-12T09:59:30.851Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T09:59:30.869Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T09:59:33.511Z [[32minfo[39m]: A user connected
+2024-08-12T09:59:37.649Z [[32minfo[39m]: A user connected
+2024-08-12T09:59:43.157Z [[32minfo[39m]: A user connected
+2024-08-12T09:59:50.414Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T10:00:10.436Z [[32minfo[39m]: Message received: hi
+2024-08-12T10:00:10.526Z [[31merror[39m]: Error creating message: Message validation failed: type: `1` is not a valid enum value for path `type`.
+2024-08-12T10:00:29.009Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T10:00:29.018Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T10:00:30.494Z [[32minfo[39m]: A user connected
+2024-08-12T10:00:46.553Z [[32minfo[39m]: A user connected
+2024-08-12T10:08:43.052Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T10:08:43.059Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T10:08:44.487Z [[32minfo[39m]: A user connected
+2024-08-12T10:09:08.389Z [[32minfo[39m]: A user connected
+2024-08-12T10:09:11.738Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T10:09:17.147Z [[32minfo[39m]: Message received: hi
+2024-08-12T10:09:41.131Z [[32minfo[39m]: Message received: How are you Angelica Kam?
+2024-08-12T10:11:02.693Z [[32minfo[39m]: A user connected
+2024-08-12T10:11:06.688Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-12T10:11:11.438Z [[32minfo[39m]: Message received: Hi Milan 
+2024-08-12T10:11:16.266Z [[32minfo[39m]: Message received: love you babe
+2024-08-12T10:11:22.064Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T10:11:23.152Z [[32minfo[39m]: A user connected
+2024-08-12T10:11:26.662Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T10:11:29.655Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T10:11:30.933Z [[32minfo[39m]: A user connected
+2024-08-12T10:11:35.186Z [[32minfo[39m]: Milan joined room: 2
+2024-08-12T10:11:45.120Z [[32minfo[39m]: Message received: heya im here now
+2024-08-12T10:11:47.711Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-12T10:11:48.021Z [[32minfo[39m]: A user connected
+2024-08-12T10:11:52.036Z [[32minfo[39m]: Angelica joined room: 2
+2024-08-12T10:11:56.256Z [[32minfo[39m]: Message received: me too!
+2024-08-12T10:11:58.472Z [[32minfo[39m]: Angelica left the room: 2
+2024-08-12T10:11:58.773Z [[32minfo[39m]: A user connected
+2024-08-12T10:12:03.791Z [[32minfo[39m]: Angelica joined room: 2
+2024-08-12T10:12:08.709Z [[32minfo[39m]: Angelica left the room: 2
+2024-08-12T10:12:11.030Z [[32minfo[39m]: Milan left the room: 2
+2024-08-12T10:12:11.892Z [[32minfo[39m]: A user connected
+2024-08-12T10:12:15.742Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T10:12:21.105Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T10:12:26.025Z [[32minfo[39m]: A user connected
+2024-08-12T10:14:21.115Z [[32minfo[39m]: Milan joined room: 2

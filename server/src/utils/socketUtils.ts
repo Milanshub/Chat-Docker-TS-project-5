@@ -22,20 +22,22 @@ export const setupSocketIO = (server: any) => {
             socket.emit('message', {
                 user: 'system',
                 message: `Welcome ${username} to room ${room}`,
-                type: 'text'
+                type: 'text',
+                room
             });
 
             // Notify others in the room
             socket.broadcast.to(room).emit('message', {
                 user: 'system',
                 message: `${username} has joined the room`,
-                type: 'text'
+                type: 'text',
+                room
             });
 
             // Handle incoming messages within the room
-            socket.on('message', (msg: string) => {
+            socket.on('message', (msg: { user: string, message: string, type?: string, room: string }) => {
                 logger.info('Message received:', msg);
-                io.to(room).emit('message', msg);
+                io.to(msg.room).emit('message', msg);
             });
 
             // Handle user disconnecting
@@ -44,7 +46,8 @@ export const setupSocketIO = (server: any) => {
                 io.to(room).emit('message', {
                     user: 'system',
                     message: `${username} has left the room`,
-                    type: 'text'
+                    type: 'text',
+                    room
                 });
             });
         });

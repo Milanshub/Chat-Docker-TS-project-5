@@ -14,21 +14,23 @@ const socket: Socket = io('http://localhost:5000', {
 });
 
 const ChatPage: React.FC = () => {
-    const [username, setUsername] = useState<string>(''); 
-    const [message, setMessage] = useState<string>(''); 
-    const [messages, setMessages] = useState<IMessage[]>([]); 
+    const [username, setUsername] = useState<string>('');
+    const [message, setMessage] = useState<string>('');
+    const [messages, setMessages] = useState<IMessage[]>([]);
     const [isInRoom, setIsInRoom] = useState<boolean>(false);
-    const [room, setRoom] = useState<string>('default-room'); 
+    const [room, setRoom] = useState<string>('default-room');
 
     useEffect(() => {
         log.info('ChatPage component mounted');
 
         const loadMessages = async () => {
-            try {
-                const initialMessages = await fetchMessages();
-                setMessages(initialMessages);
-            } catch (error) {
-                log.error('Error loading messages:', error);
+            if (room) { // Ensure room is defined before fetching messages
+                try {
+                    const initialMessages = await fetchMessages(room); // Pass room here
+                    setMessages(initialMessages);
+                } catch (error) {
+                    log.error('Error loading messages:', error);
+                }
             }
         };
 
@@ -46,7 +48,7 @@ const ChatPage: React.FC = () => {
                 log.info('ChatPage component unmounted');
             };
         }
-    }, [isInRoom]);
+    }, [isInRoom, room]); // Add room as a dependency
 
     const handleJoinRoom = (username: string, room: string) => {
         setUsername(username);
@@ -58,25 +60,26 @@ const ChatPage: React.FC = () => {
     };
 
     const handleSendMessage = async () => {
-        if (message.trim() && username.trim()) {
+        if (message.trim() && username.trim() && room) { // Ensure room is also checked
             const newMessage: IMessage = {
                 user: username,
                 message,
-                type: 'text'
+                type: 'text', // Default type
+                room // Ensure room is included
             };
-    
+
             try {
-                console.log('Sending message:', newMessage); 
+                console.log('Sending message:', newMessage);
                 socket.emit('message', newMessage);
-    
-                const response = await createMessage(newMessage.user, newMessage.message, newMessage.type);
-                console.log('Message saved response:', response); 
+
+                const response = await createMessage(newMessage.user, newMessage.message, newMessage.type, newMessage.room); // Pass room here
+                console.log('Message saved response:', response);
                 setMessage('');
             } catch (error) {
                 console.error('Error sending message:', error);
             }
         } else {
-            console.warn('Message not sent. Username or message is empty.');
+            console.warn('Message not sent. Username, message, or room is empty.');
         }
     };
 

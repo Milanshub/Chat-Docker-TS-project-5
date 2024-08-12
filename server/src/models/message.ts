@@ -5,6 +5,7 @@ export interface IMessage extends Document {
     user: string;
     message: string; 
     type?: 'text' | 'image' | 'file'; //type property of message 
+    room: string;
     createdAt?: Date;
     updatedAt?: Date; 
 } 
@@ -14,6 +15,7 @@ const messageSchema: Schema = new Schema<IMessage>({
     user: {type: String, required: true}, 
     message: {type: String, required: true},
     type: {type: String, enum: ['text', 'image', 'file'], default: 'text'},
+    room: {type: String, required: true}
 }, {
     timestamps: true, // Automatically add createdAt and updatedAt fields
   }); 

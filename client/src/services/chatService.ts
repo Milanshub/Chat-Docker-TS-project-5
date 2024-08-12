@@ -1,19 +1,23 @@
+// src/services/chatService.ts
+
 import axios from 'axios';
-import log from '../utils/logger'; // Use loglevel for logging
+import log from '../utils/logger'; 
 import { IMessage } from '../models/IMessage'; 
 
 const REACT_APP_API_URL = 'http://localhost:5000/api'; 
 
-// Default headers to be used in requests
 const defaultHeaders = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
-    // You can add more headers if needed, e.g., Authorization tokens
 };
 
-export const fetchMessages = async (): Promise<IMessage[]> => {
+// Fetch messages from a specific room
+export const fetchMessages = async (room: string): Promise<IMessage[]> => {
     try {
-        const response = await axios.get(`${REACT_APP_API_URL}/messages`, { headers: defaultHeaders });
+        const response = await axios.get(`${REACT_APP_API_URL}/messages`, {
+            headers: defaultHeaders,
+            params: { room } // Pass room as a query parameter
+        });
         return response.data;
     } catch (error) {
         log.error('Error fetching messages:', error);
@@ -21,6 +25,23 @@ export const fetchMessages = async (): Promise<IMessage[]> => {
     }
 };
 
+// Create a new message
+export const createMessage = async (
+    user: string, 
+    message: string, 
+    type: 'text' | 'image' | 'file' = 'text', // Default type if not provided
+    room: string // room must be provided
+): Promise<IMessage> => {
+    try {
+        const response = await axios.post(`${REACT_APP_API_URL}/messages`, { user, message, type, room }, { headers: defaultHeaders });
+        return response.data;
+    } catch (error) {
+        log.error('Error creating message:', error);
+        throw error;
+    }
+};
+
+// Fetch a single message by ID
 export const fetchMessageById = async (id: string): Promise<IMessage> => {
     try {
         const response = await axios.get(`${REACT_APP_API_URL}/messages/${id}`, { headers: defaultHeaders });
@@ -31,16 +52,7 @@ export const fetchMessageById = async (id: string): Promise<IMessage> => {
     }
 };
 
-export const createMessage = async (user: string, message: string, type?: 'text' | 'image' | 'file'): Promise<IMessage> => {
-    try {
-        const response = await axios.post(`${REACT_APP_API_URL}/messages`, { user, message, type }, { headers: defaultHeaders });
-        return response.data;
-    } catch (error) {
-        log.error('Error creating message:', error);
-        throw error;
-    }
-};
-
+// Update a message by ID
 export const updateMessage = async (id: string, updates: Partial<IMessage>): Promise<IMessage> => {
     try {
         const response = await axios.put(`${REACT_APP_API_URL}/messages/${id}`, updates, { headers: defaultHeaders });
@@ -51,6 +63,7 @@ export const updateMessage = async (id: string, updates: Partial<IMessage>): Pro
     }
 };
 
+// Delete a message by ID
 export const deleteMessage = async (id: string): Promise<void> => {
     try {
         await axios.delete(`${REACT_APP_API_URL}/messages/${id}`, { headers: defaultHeaders });
