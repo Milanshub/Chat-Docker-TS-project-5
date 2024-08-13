@@ -2,6 +2,7 @@ import mongoose, {Schema, Document, Model} from "mongoose";
 
 // Define typescript interface for message document 
 export interface IMessage extends Document {
+    _id: mongoose.Types.ObjectId; 
     user: string;
     message: string; 
     type?: 'text' | 'image' | 'file'; //type property of message 

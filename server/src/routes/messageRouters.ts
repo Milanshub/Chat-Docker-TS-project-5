@@ -7,15 +7,15 @@ const router: Router = Router();
 router.get('/messages', messageController.getAllMessagesController);
 
 // Route to get a message by its ID
-router.get('/messages/:id', messageController.getMessagesByIdController); 
+router.get('/messages/:id', messageController.getMessagesByIdController);
 
 // Route to create a new message
-router.post('/messages', messageController.createMessageController); 
+router.post('/messages', messageController.createMessageController);
 
 // Route to update a message
-router.put('/messages/:id', messageController.updateMessageController); 
+router.put('/messages/:id', messageController.updateMessageController);
 
 // Route to delete a message
-router.delete('/messages/:id', messageController.deleteMessageController); 
+router.delete('/messages/:id', messageController.deleteMessageController);
 
 export default router;

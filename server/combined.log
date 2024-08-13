@@ -213,3 +213,597 @@
 2024-08-12T10:12:21.105Z [[32minfo[39m]: Milan left the room: 1
 2024-08-12T10:12:26.025Z [[32minfo[39m]: A user connected
 2024-08-12T10:14:21.115Z [[32minfo[39m]: Milan joined room: 2
+2024-08-12T11:30:46.855Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T11:30:46.863Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T11:30:47.434Z [[32minfo[39m]: A user connected
+2024-08-12T11:32:15.585Z [[32minfo[39m]: A user connected
+2024-08-12T11:32:20.695Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T11:33:13.348Z [[32minfo[39m]: Milan joined room: 2
+2024-08-12T11:33:21.582Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T11:33:34.740Z [[32minfo[39m]: Milan  joined room: 2
+2024-08-12T11:33:43.992Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T11:33:43.992Z [[32minfo[39m]: Milan left the room: 2
+2024-08-12T11:33:43.993Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T11:33:43.993Z [[32minfo[39m]: Milan  left the room: 2
+2024-08-12T11:33:44.582Z [[32minfo[39m]: A user connected
+2024-08-12T11:34:20.490Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T11:34:32.883Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T11:34:33.465Z [[32minfo[39m]: A user connected
+2024-08-12T11:34:37.040Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T11:34:43.555Z [[32minfo[39m]: Message received: 111
+2024-08-12T11:34:47.320Z [[32minfo[39m]: Message received: 111
+2024-08-12T11:35:31.215Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T11:35:31.849Z [[32minfo[39m]: A user connected
+2024-08-12T11:35:35.292Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T11:36:10.005Z [[32minfo[39m]: Message received: 11
+2024-08-12T11:39:45.827Z [[32minfo[39m]: Message received: 222
+2024-08-12T11:39:59.434Z [[32minfo[39m]: Message received: 33
+2024-08-12T11:44:22.430Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T11:44:22.439Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T11:44:24.788Z [[32minfo[39m]: A user connected
+2024-08-12T11:44:29.054Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T11:44:29.065Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T11:44:29.788Z [[32minfo[39m]: A user connected
+2024-08-12T11:44:40.040Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T11:44:40.056Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T11:44:40.789Z [[32minfo[39m]: A user connected
+2024-08-12T11:44:42.811Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T11:44:42.819Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T11:44:45.802Z [[32minfo[39m]: A user connected
+2024-08-12T11:45:02.360Z [[32minfo[39m]: A user connected
+2024-08-12T11:45:18.488Z [[32minfo[39m]: A user connected
+2024-08-12T11:49:08.095Z [[32minfo[39m]: A user connected
+2024-08-12T11:49:47.351Z [[32minfo[39m]: A user connected
+2024-08-12T11:49:53.497Z [[32minfo[39m]: A user connected
+2024-08-12T11:49:57.484Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T11:51:41.356Z [[32minfo[39m]: A user connected
+2024-08-12T11:52:33.119Z [[32minfo[39m]: A user connected
+2024-08-12T11:52:42.521Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T11:52:43.675Z [[32minfo[39m]: A user connected
+2024-08-12T11:52:47.725Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T11:55:58.636Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T11:55:59.162Z [[32minfo[39m]: A user connected
+2024-08-12T11:56:05.425Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T11:56:10.860Z [[32minfo[39m]: Message received: 1
+2024-08-12T11:56:12.349Z [[31merror[39m]: Error deleting message: Invalid message ID
+2024-08-12T11:56:13.437Z [[31merror[39m]: Error deleting message: Invalid message ID
+2024-08-12T11:56:13.636Z [[31merror[39m]: Error deleting message: Invalid message ID
+2024-08-12T11:56:13.820Z [[31merror[39m]: Error deleting message: Invalid message ID
+2024-08-12T11:56:14.136Z [[31merror[39m]: Error deleting message: Invalid message ID
+2024-08-12T11:56:14.468Z [[31merror[39m]: Error deleting message: Invalid message ID
+2024-08-12T11:56:16.221Z [[31merror[39m]: Error deleting message: Invalid message ID
+2024-08-12T11:56:17.104Z [[31merror[39m]: Error deleting message: Invalid message ID
+2024-08-12T11:56:48.804Z [[31merror[39m]: Error deleting message: Invalid message ID
+2024-08-12T12:03:14.433Z [[32minfo[39m]: A user connected
+2024-08-12T12:03:33.613Z [[32minfo[39m]: A user connected
+2024-08-12T12:09:01.291Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T12:09:01.300Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T12:09:01.819Z [[32minfo[39m]: A user connected
+2024-08-12T12:09:01.831Z [[32minfo[39m]: A user connected
+2024-08-12T12:09:02.841Z [[32minfo[39m]: A user connected
+2024-08-12T12:09:15.416Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T12:09:15.426Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T12:09:16.842Z [[32minfo[39m]: A user connected
+2024-08-12T12:09:17.808Z [[32minfo[39m]: A user connected
+2024-08-12T12:09:17.819Z [[32minfo[39m]: A user connected
+2024-08-12T12:09:23.252Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T12:09:23.259Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T12:09:23.828Z [[32minfo[39m]: A user connected
+2024-08-12T12:09:23.836Z [[32minfo[39m]: A user connected
+2024-08-12T12:09:23.846Z [[32minfo[39m]: A user connected
+2024-08-12T12:09:29.793Z [[32minfo[39m]: A user connected
+2024-08-12T12:09:33.513Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T12:09:44.106Z [[32minfo[39m]: Message received: 22
+2024-08-12T12:10:00.689Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T12:10:01.287Z [[32minfo[39m]: A user connected
+2024-08-12T12:10:11.702Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T12:10:20.116Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T12:10:20.745Z [[32minfo[39m]: A user connected
+2024-08-12T12:10:30.578Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T12:10:35.563Z [[32minfo[39m]: Message received: 1
+2024-08-12T12:10:44.168Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T12:10:44.724Z [[32minfo[39m]: A user connected
+2024-08-12T12:10:48.760Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T12:10:58.793Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T12:11:01.754Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T12:11:01.756Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T12:11:02.446Z [[32minfo[39m]: A user connected
+2024-08-12T12:11:05.163Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T12:11:10.224Z [[32minfo[39m]: Message received: 33
+2024-08-12T12:11:28.370Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T12:11:32.115Z [[32minfo[39m]: A user connected
+2024-08-12T12:11:35.206Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T12:27:07.879Z [[32minfo[39m]: A user connected
+2024-08-12T12:27:15.510Z [[32minfo[39m]: Milan left the room: 1
+2024-08-12T12:27:16.317Z [[32minfo[39m]: A user connected
+2024-08-12T12:27:19.882Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T12:27:26.550Z [[32minfo[39m]: Message received: 44
+2024-08-12T12:27:39.538Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T12:29:30.999Z [[32minfo[39m]: A user connected
+2024-08-12T12:29:49.479Z [[32minfo[39m]: Milan joined room: 1
+2024-08-12T12:29:57.867Z [[32minfo[39m]: Message received: 1111111
+2024-08-12T12:33:29.716Z [[32minfo[39m]: A user connected
+2024-08-12T12:33:38.960Z [[32minfo[39m]: Milan  joined room: 2
+2024-08-12T12:34:01.768Z [[32minfo[39m]: mil joined room: 2
+2024-08-12T12:34:09.613Z [[32minfo[39m]: Message received: 1
+2024-08-12T12:34:09.647Z [[32minfo[39m]: Message received: 1
+2024-08-12T12:34:23.018Z [[32minfo[39m]: mil joined room: 2
+2024-08-12T12:48:52.671Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T12:48:52.676Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T12:48:55.941Z [[32minfo[39m]: A user connected
+2024-08-12T12:48:56.525Z [[32minfo[39m]: A user connected
+2024-08-12T12:48:57.920Z [[32minfo[39m]: A user connected
+2024-08-12T12:49:02.589Z [[32minfo[39m]: A user connected
+2024-08-12T12:49:10.012Z [[32minfo[39m]: Milan joined room: 2
+2024-08-12T12:49:13.057Z [[32minfo[39m]: Message received: 44
+2024-08-12T12:49:23.421Z [[32minfo[39m]: Milan left the room: 2
+2024-08-12T12:49:24.158Z [[32minfo[39m]: A user connected
+2024-08-12T12:49:27.335Z [[32minfo[39m]: Milan joined room: 2
+2024-08-12T12:50:12.617Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-12T12:50:12.623Z [[32minfo[39m]: Server is running on port 5000
+2024-08-12T12:50:16.977Z [[32minfo[39m]: A user connected
+2024-08-12T12:50:19.354Z [[32minfo[39m]: A user connected
+2024-08-12T12:50:27.374Z [[32minfo[39m]: Milan joined room: 2
+2024-08-12T12:50:36.036Z [[32minfo[39m]: Message received: 5
+2024-08-12T12:51:26.926Z [[32minfo[39m]: Message received: 44
+2024-08-12T12:51:32.399Z [[32minfo[39m]: Message received: 44
+2024-08-12T12:51:36.551Z [[32minfo[39m]: Message received: 777
+2024-08-12T12:51:44.323Z [[32minfo[39m]: Message received: 5565656
+2024-08-12T12:51:48.607Z [[32minfo[39m]: Milan left the room: 2
+2024-08-12T12:51:49.240Z [[32minfo[39m]: A user connected
+2024-08-12T12:51:52.928Z [[32minfo[39m]: Milan joined room: 2
+2024-08-12T12:52:01.811Z [[32minfo[39m]: Milan left the room: 2
+2024-08-12T12:52:02.982Z [[32minfo[39m]: A user connected
+2024-08-12T12:52:20.073Z [[32minfo[39m]: Milan joined room: 2
+2024-08-12T12:52:41.053Z [[32minfo[39m]: Message received: 44
+2024-08-12T12:52:44.877Z [[32minfo[39m]: Message received: 555
+2024-08-12T13:10:05.886Z [[32minfo[39m]: Milan left the room: 2
+2024-08-12T13:10:06.868Z [[32minfo[39m]: A user connected
+2024-08-12T14:08:26.545Z [[32minfo[39m]: A user connected
+2024-08-13T07:53:23.460Z [[32minfo[39m]: A user connected
+2024-08-13T09:29:06.653Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-13T09:29:06.660Z [[32minfo[39m]: Server is running on port 5000
+2024-08-13T09:29:12.782Z [[32minfo[39m]: A user connected
+2024-08-13T09:29:19.580Z [[32minfo[39m]: A user connected
+2024-08-13T09:29:29.808Z [[32minfo[39m]: milan joined room: 3
+2024-08-13T09:29:50.250Z [[32minfo[39m]: Message received: hi
+2024-08-13T09:29:50.348Z [[32minfo[39m]: Creating message: hi
+2024-08-13T09:29:50.409Z [[32minfo[39m]: Message saved: hi
+2024-08-13T09:30:04.854Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T09:30:04.913Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T09:34:25.515Z [[32minfo[39m]: milan left the room: 3
+2024-08-13T09:34:26.974Z [[32minfo[39m]: A user connected
+2024-08-13T09:34:32.925Z [[32minfo[39m]: Milan joined room: 3
+2024-08-13T09:34:42.391Z [[32minfo[39m]: Milan joined room: 3
+2024-08-13T09:36:07.315Z [[32minfo[39m]: Message received: hey room 3
+2024-08-13T09:36:07.367Z [[32minfo[39m]: Message received: hey room 3
+2024-08-13T09:36:07.381Z [[32minfo[39m]: Creating message: hey room 3
+2024-08-13T09:36:07.430Z [[32minfo[39m]: Message saved: hey room 3
+2024-08-13T09:36:14.132Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T09:36:14.180Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T09:38:30.783Z [[32minfo[39m]: Message received: hey room 33
+2024-08-13T09:38:30.784Z [[32minfo[39m]: Message received: hey room 33
+2024-08-13T09:38:30.798Z [[32minfo[39m]: Creating message: hey room 33
+2024-08-13T09:38:30.846Z [[32minfo[39m]: Message saved: hey room 33
+2024-08-13T09:38:39.905Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T09:38:39.952Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T09:38:52.766Z [[32minfo[39m]: Message received: Hey room 333
+2024-08-13T09:38:52.767Z [[32minfo[39m]: Message received: Hey room 333
+2024-08-13T09:38:52.779Z [[32minfo[39m]: Creating message: Hey room 333
+2024-08-13T09:38:52.830Z [[32minfo[39m]: Message saved: Hey room 333
+2024-08-13T09:39:17.137Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T09:39:17.181Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T09:44:04.253Z [[32minfo[39m]: A user connected
+2024-08-13T09:46:31.168Z [[32minfo[39m]: A user connected
+2024-08-13T09:49:15.825Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-13T09:49:15.853Z [[32minfo[39m]: Server is running on port 5000
+2024-08-13T09:49:16.213Z [[32minfo[39m]: A user connected
+2024-08-13T09:49:16.218Z [[32minfo[39m]: A user connected
+2024-08-13T09:49:17.182Z [[32minfo[39m]: A user connected
+2024-08-13T09:54:25.272Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-13T09:54:25.284Z [[32minfo[39m]: Server is running on port 5000
+2024-08-13T09:54:26.196Z [[32minfo[39m]: A user connected
+2024-08-13T09:54:26.202Z [[32minfo[39m]: A user connected
+2024-08-13T09:54:26.220Z [[32minfo[39m]: A user connected
+2024-08-13T09:54:38.690Z [[32minfo[39m]: Milan joined room: 5
+2024-08-13T09:55:58.235Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-13T09:55:58.245Z [[32minfo[39m]: Server is running on port 5000
+2024-08-13T09:56:01.244Z [[32minfo[39m]: A user connected
+2024-08-13T09:56:05.330Z [[32minfo[39m]: Milan joined room: 6
+2024-08-13T09:57:03.871Z [[32minfo[39m]: Message received: 1
+2024-08-13T09:57:04.002Z [[32minfo[39m]: Creating message: 1
+2024-08-13T09:57:04.069Z [[32minfo[39m]: Message saved: 1
+2024-08-13T09:58:32.204Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T09:58:32.269Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T10:09:07.369Z [[32minfo[39m]: A user connected
+2024-08-13T10:21:36.904Z [[32minfo[39m]: A user connected
+2024-08-13T10:22:19.336Z [[32minfo[39m]: A user connected
+2024-08-13T10:22:32.382Z [[32minfo[39m]: Milan left the room: 6
+2024-08-13T10:22:38.118Z [[32minfo[39m]: A user connected
+2024-08-13T10:22:45.637Z [[32minfo[39m]: Angelica joined room: 5
+2024-08-13T10:22:50.710Z [[32minfo[39m]: Message received: 44
+2024-08-13T10:22:50.769Z [[32minfo[39m]: Creating message: 44
+2024-08-13T10:22:50.842Z [[32minfo[39m]: Message saved: 44
+2024-08-13T10:23:19.757Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T10:23:20.128Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T10:28:12.219Z [[32minfo[39m]: A user connected
+2024-08-13T10:28:12.368Z [[32minfo[39m]: Angelica left the room: 5
+2024-08-13T10:28:27.709Z [[32minfo[39m]: A user connected
+2024-08-13T10:28:33.539Z [[32minfo[39m]: 3 joined room: 3
+2024-08-13T10:28:42.427Z [[32minfo[39m]: Message received: 44
+2024-08-13T10:28:42.524Z [[32minfo[39m]: Creating message: 44
+2024-08-13T10:28:43.210Z [[32minfo[39m]: Message saved: 44
+2024-08-13T10:29:15.276Z [[32minfo[39m]: Message received: 55
+2024-08-13T10:29:15.297Z [[32minfo[39m]: Creating message: 55
+2024-08-13T10:29:15.351Z [[32minfo[39m]: Message saved: 55
+2024-08-13T10:29:22.260Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T10:29:22.306Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T10:29:29.906Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T10:29:29.953Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T10:35:25.062Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-13T10:35:25.095Z [[32minfo[39m]: Server is running on port 5000
+2024-08-13T10:35:28.287Z [[32minfo[39m]: A user connected
+2024-08-13T10:37:08.822Z [[32minfo[39m]: A user connected
+2024-08-13T10:37:25.781Z [[32minfo[39m]: Milan joined room: 1
+2024-08-13T10:37:31.288Z [[32minfo[39m]: Message received: Hey room 333
+2024-08-13T10:37:31.390Z [[32minfo[39m]: Creating message: Hey room 333
+2024-08-13T10:37:31.459Z [[32minfo[39m]: Message saved: Hey room 333
+2024-08-13T10:37:41.352Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T10:37:41.396Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T10:37:47.419Z [[32minfo[39m]: Message received: Hey room 333
+2024-08-13T10:37:47.429Z [[32minfo[39m]: Creating message: Hey room 333
+2024-08-13T10:37:47.536Z [[32minfo[39m]: Message saved: Hey room 333
+2024-08-13T10:37:49.390Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T10:37:49.427Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T10:38:03.194Z [[32minfo[39m]: Message received: how are you
+2024-08-13T10:38:03.212Z [[32minfo[39m]: Creating message: how are you
+2024-08-13T10:38:03.263Z [[32minfo[39m]: Message saved: how are you
+2024-08-13T10:38:08.890Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T10:38:08.929Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T10:56:22.871Z [[32minfo[39m]: A user connected
+2024-08-13T10:56:41.366Z [[32minfo[39m]: Milan left the room: 1
+2024-08-13T10:56:43.788Z [[32minfo[39m]: A user connected
+2024-08-13T10:56:48.841Z [[32minfo[39m]: Angelica joined room: 3
+2024-08-13T11:00:09.381Z [[32minfo[39m]: A user connected
+2024-08-13T11:00:11.799Z [[32minfo[39m]: Angelica left the room: 3
+2024-08-13T11:00:16.463Z [[32minfo[39m]: A user connected
+2024-08-13T11:00:19.221Z [[32minfo[39m]: Milan joined room: 1
+2024-08-13T11:00:23.812Z [[32minfo[39m]: Message received: 1
+2024-08-13T11:00:23.883Z [[32minfo[39m]: Creating message: 1
+2024-08-13T11:00:23.942Z [[32minfo[39m]: Message saved: 1
+2024-08-13T11:02:40.151Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:02:40.186Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:02:40.241Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:02:47.731Z [[32minfo[39m]: Message received: 55
+2024-08-13T11:02:47.748Z [[32minfo[39m]: Creating message: 55
+2024-08-13T11:02:47.797Z [[32minfo[39m]: Message saved: 55
+2024-08-13T11:06:26.876Z [[32minfo[39m]: Milan left the room: 1
+2024-08-13T11:06:31.012Z [[32minfo[39m]: A user connected
+2024-08-13T11:06:38.021Z [[32minfo[39m]: milan joined room: 7
+2024-08-13T11:06:42.572Z [[32minfo[39m]: Message received: html-portfolio
+2024-08-13T11:06:42.644Z [[32minfo[39m]: Creating message: html-portfolio
+2024-08-13T11:06:42.694Z [[32minfo[39m]: Message saved: html-portfolio
+2024-08-13T11:06:45.347Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:06:45.390Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:06:54.954Z [[32minfo[39m]: milan left the room: 7
+2024-08-13T11:06:57.467Z [[32minfo[39m]: A user connected
+2024-08-13T11:08:34.302Z [[32minfo[39m]: A user connected
+2024-08-13T11:10:01.538Z [[32minfo[39m]: A user connected
+2024-08-13T11:10:35.973Z [[32minfo[39m]: Milan joined room: 1
+2024-08-13T11:10:38.981Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:10:39.026Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:10:39.817Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:10:39.859Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:10:40.788Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:10:40.826Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:10:43.434Z [[32minfo[39m]: Message received: story
+2024-08-13T11:10:43.482Z [[32minfo[39m]: Creating message: story
+2024-08-13T11:10:43.522Z [[32minfo[39m]: Message saved: story
+2024-08-13T11:10:45.462Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:10:45.544Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:10:47.725Z [[32minfo[39m]: Milan left the room: 1
+2024-08-13T11:10:55.180Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:10:55.219Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:10:57.103Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:10:57.141Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:10:59.102Z [[32minfo[39m]: Creating message: 66
+2024-08-13T11:10:59.146Z [[32minfo[39m]: Message saved: 66
+2024-08-13T11:11:00.220Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:11:00.258Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:11:12.924Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:11:12.965Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:11:14.369Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:11:14.405Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:11:16.466Z [[32minfo[39m]: Creating message: 6
+2024-08-13T11:11:16.577Z [[32minfo[39m]: Message saved: 6
+2024-08-13T11:11:17.835Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:11:17.876Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:11:25.340Z [[32minfo[39m]: Creating message: 7
+2024-08-13T11:11:25.382Z [[32minfo[39m]: Message saved: 7
+2024-08-13T11:11:26.604Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:11:26.642Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:12:02.338Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-13T11:12:02.346Z [[32minfo[39m]: Server is running on port 5000
+2024-08-13T11:12:12.742Z [[32minfo[39m]: A user connected
+2024-08-13T11:12:24.751Z [[32minfo[39m]: milan joined room: 44
+2024-08-13T11:12:27.955Z [[32minfo[39m]: Message received: 3
+2024-08-13T11:12:28.042Z [[32minfo[39m]: Creating message: 3
+2024-08-13T11:12:28.107Z [[32minfo[39m]: Message saved: 3
+2024-08-13T11:12:31.030Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:12:31.085Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:12:33.876Z [[32minfo[39m]: Message received: 33
+2024-08-13T11:12:33.903Z [[32minfo[39m]: Creating message: 33
+2024-08-13T11:12:33.952Z [[32minfo[39m]: Message saved: 33
+2024-08-13T11:12:35.147Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:12:35.203Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:12:37.306Z [[32minfo[39m]: Message received: 333
+2024-08-13T11:12:37.312Z [[32minfo[39m]: Creating message: 333
+2024-08-13T11:12:37.374Z [[32minfo[39m]: Message saved: 333
+2024-08-13T11:12:38.387Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:12:38.435Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:12:58.576Z [[32minfo[39m]: milan left the room: 44
+2024-08-13T11:12:59.979Z [[32minfo[39m]: A user connected
+2024-08-13T11:16:59.392Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-13T11:16:59.426Z [[32minfo[39m]: Server is running on port 5000
+2024-08-13T11:17:00.648Z [[32minfo[39m]: A user connected
+2024-08-13T11:17:13.393Z [[32minfo[39m]: A user connected
+2024-08-13T11:17:30.380Z [[32minfo[39m]: Milan joined room: 1
+2024-08-13T11:17:33.679Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:17:33.777Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:17:33.840Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:22:56.658Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-13T11:22:56.666Z [[32minfo[39m]: Server is running on port 5000
+2024-08-13T11:22:57.658Z [[32minfo[39m]: A user connected
+2024-08-13T11:23:24.727Z [[32minfo[39m]: A user connected
+2024-08-13T11:23:33.617Z [[32minfo[39m]: Milan joined room: 1
+2024-08-13T11:23:36.826Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:23:36.876Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:23:37.903Z [[32minfo[39m]: Milan left the room: 1
+2024-08-13T11:23:42.446Z [[32minfo[39m]: A user connected
+2024-08-13T11:23:48.224Z [[32minfo[39m]: Milan joined room: 99
+2024-08-13T11:23:52.420Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:23:52.552Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:23:52.618Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:23:56.131Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:23:56.174Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:23:59.580Z [[32minfo[39m]: Message received: 9
+2024-08-13T11:23:59.624Z [[32minfo[39m]: Creating message: 9
+2024-08-13T11:23:59.665Z [[32minfo[39m]: Message saved: 9
+2024-08-13T11:24:01.052Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:24:01.091Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:24:02.452Z [[32minfo[39m]: Milan left the room: 99
+2024-08-13T11:24:02.899Z [[32minfo[39m]: A user connected
+2024-08-13T11:24:07.278Z [[32minfo[39m]: Milan joined room: 1
+2024-08-13T11:24:11.263Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:24:11.317Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:24:11.360Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:38:35.037Z [[32minfo[39m]: Milan left the room: 1
+2024-08-13T11:38:36.541Z [[32minfo[39m]: A user connected
+2024-08-13T11:38:41.942Z [[32minfo[39m]: Milan joined room: 1
+2024-08-13T11:38:49.405Z [[32minfo[39m]: Message received: 4
+2024-08-13T11:38:49.453Z [[32minfo[39m]: Creating message: 4
+2024-08-13T11:38:49.505Z [[32minfo[39m]: Message saved: 4
+2024-08-13T11:38:52.543Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:38:52.584Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:38:57.222Z [[32minfo[39m]: Message received: 4
+2024-08-13T11:38:57.239Z [[32minfo[39m]: Creating message: 4
+2024-08-13T11:38:57.287Z [[32minfo[39m]: Message saved: 4
+2024-08-13T11:39:43.961Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:39:44.005Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:39:45.782Z [[32minfo[39m]: Milan left the room: 1
+2024-08-13T11:39:53.672Z [[32minfo[39m]: Creating message: 7
+2024-08-13T11:39:53.712Z [[32minfo[39m]: Message saved: 7
+2024-08-13T11:39:56.839Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:39:56.879Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:40:05.359Z [[32minfo[39m]: Creating message: 3
+2024-08-13T11:40:05.400Z [[32minfo[39m]: Message saved: 3
+2024-08-13T11:40:15.842Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:40:15.886Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:40:18.363Z [[32minfo[39m]: Creating message: 1111111
+2024-08-13T11:40:18.404Z [[32minfo[39m]: Message saved: 1111111
+2024-08-13T11:40:20.288Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:40:20.328Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:43:40.875Z [[32minfo[39m]: A user connected
+2024-08-13T11:43:52.622Z [[32minfo[39m]: Creating message: 3
+2024-08-13T11:43:52.672Z [[32minfo[39m]: Message saved: 3
+2024-08-13T11:43:54.930Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:43:54.972Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:43:58.407Z [[32minfo[39m]: A user connected
+2024-08-13T11:44:02.454Z [[32minfo[39m]: Milan joined room: Relinars-project-1
+2024-08-13T11:44:05.139Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:44:05.165Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:44:05.205Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:44:07.823Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:44:07.862Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:44:09.913Z [[32minfo[39m]: Milan left the room: Relinars-project-1
+2024-08-13T11:44:11.019Z [[32minfo[39m]: A user connected
+2024-08-13T11:44:14.061Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-13T11:44:16.208Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:44:16.263Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:44:17.405Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-13T11:44:24.481Z [[32minfo[39m]: Creating message: Hey room 333
+2024-08-13T11:44:24.520Z [[32minfo[39m]: Message saved: Hey room 333
+2024-08-13T11:44:26.760Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:44:26.800Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:44:29.048Z [[32minfo[39m]: Creating message: 7
+2024-08-13T11:44:29.089Z [[32minfo[39m]: Message saved: 7
+2024-08-13T11:44:33.207Z [[32minfo[39m]: A user connected
+2024-08-13T11:44:35.792Z [[32minfo[39m]: A user connected
+2024-08-13T11:44:38.906Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-13T11:44:41.611Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:44:41.652Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:44:43.774Z [[32minfo[39m]: Message received: 55
+2024-08-13T11:44:43.810Z [[32minfo[39m]: Creating message: 55
+2024-08-13T11:44:43.850Z [[32minfo[39m]: Message saved: 55
+2024-08-13T11:44:47.899Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:44:47.976Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:46:01.778Z [[32minfo[39m]: A user connected
+2024-08-13T11:46:02.396Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-13T11:47:00.518Z [[32minfo[39m]: A user connected
+2024-08-13T11:47:09.860Z [[32minfo[39m]: A user connected
+2024-08-13T11:47:13.643Z [[32minfo[39m]: Milan joined room: 1
+2024-08-13T11:47:16.231Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:47:16.267Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:47:16.321Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:47:19.062Z [[32minfo[39m]: Milan left the room: 1
+2024-08-13T11:47:19.508Z [[32minfo[39m]: A user connected
+2024-08-13T11:47:22.579Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-13T11:47:24.951Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:47:24.989Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:47:26.596Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-13T11:47:26.951Z [[32minfo[39m]: A user connected
+2024-08-13T11:47:30.710Z [[32minfo[39m]: Milan joined room: 1
+2024-08-13T11:47:33.730Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:47:33.767Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:47:33.807Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:48:05.647Z [[32minfo[39m]: A user connected
+2024-08-13T11:48:06.473Z [[32minfo[39m]: Milan left the room: 1
+2024-08-13T11:48:09.528Z [[32minfo[39m]: A user connected
+2024-08-13T11:48:13.757Z [[32minfo[39m]: Milan joined room: React JSX
+2024-08-13T11:48:16.747Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:48:16.782Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:48:16.839Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:48:19.495Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:48:19.535Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:48:22.266Z [[32minfo[39m]: Milan left the room: React JSX
+2024-08-13T11:48:29.626Z [[32minfo[39m]: Creating message: Hey room 333
+2024-08-13T11:48:29.670Z [[32minfo[39m]: Message saved: Hey room 333
+2024-08-13T11:48:31.913Z [[32minfo[39m]: A user connected
+2024-08-13T11:48:36.758Z [[32minfo[39m]: Milan joined room: 1
+2024-08-13T11:48:38.965Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:48:39.006Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:48:40.107Z [[32minfo[39m]: Milan left the room: 1
+2024-08-13T11:48:40.727Z [[32minfo[39m]: A user connected
+2024-08-13T11:48:44.912Z [[32minfo[39m]: Milan joined room: 1
+2024-08-13T11:48:47.713Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:48:47.743Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:48:47.790Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:49:34.702Z [[32minfo[39m]: A user connected
+2024-08-13T11:49:35.475Z [[32minfo[39m]: Milan left the room: 1
+2024-08-13T11:49:38.712Z [[32minfo[39m]: A user connected
+2024-08-13T11:49:47.031Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-13T11:49:52.057Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:49:52.098Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:49:55.430Z [[32minfo[39m]: Message received: 55
+2024-08-13T11:49:55.463Z [[32minfo[39m]: Creating message: 55
+2024-08-13T11:49:55.506Z [[32minfo[39m]: Message saved: 55
+2024-08-13T11:49:58.132Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:49:58.173Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:50:00.177Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-13T11:50:00.905Z [[32minfo[39m]: A user connected
+2024-08-13T11:50:03.997Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-13T11:51:17.195Z [[32minfo[39m]: A user connected
+2024-08-13T11:51:17.405Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-13T11:51:27.684Z [[32minfo[39m]: A user connected
+2024-08-13T11:51:30.141Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-13T11:51:33.415Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:51:33.430Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:51:33.488Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:51:36.117Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:51:36.167Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:51:53.399Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:51:53.413Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:51:53.462Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:52:03.566Z [[32minfo[39m]: Message received: 55
+2024-08-13T11:52:03.571Z [[32minfo[39m]: Creating message: 55
+2024-08-13T11:52:03.615Z [[32minfo[39m]: Message saved: 55
+2024-08-13T11:58:53.796Z [[32minfo[39m]: A user connected
+2024-08-13T11:58:54.432Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-13T11:58:59.750Z [[32minfo[39m]: A user connected
+2024-08-13T11:59:03.110Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-13T11:59:08.413Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:59:08.456Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:59:09.312Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:59:09.350Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:59:11.919Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:59:11.932Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:59:11.985Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:59:14.436Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:59:14.474Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:59:16.782Z [[32minfo[39m]: Message received: 55
+2024-08-13T11:59:16.786Z [[32minfo[39m]: Creating message: 55
+2024-08-13T11:59:16.829Z [[32minfo[39m]: Message saved: 55
+2024-08-13T11:59:17.937Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:59:17.981Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:59:19.439Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-13T11:59:20.450Z [[32minfo[39m]: A user connected
+2024-08-13T11:59:24.338Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-13T11:59:28.080Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:59:28.085Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:59:28.127Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:59:31.316Z [[32minfo[39m]: Message received: 66
+2024-08-13T11:59:31.322Z [[32minfo[39m]: Creating message: 66
+2024-08-13T11:59:31.361Z [[32minfo[39m]: Message saved: 66
+2024-08-13T11:59:32.921Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:59:32.959Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:59:33.877Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T11:59:33.917Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T11:59:35.284Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-13T11:59:35.907Z [[32minfo[39m]: A user connected
+2024-08-13T11:59:40.416Z [[32minfo[39m]: Angelica joined room: Relinars-project-1
+2024-08-13T11:59:42.959Z [[32minfo[39m]: Message received: 44
+2024-08-13T11:59:42.979Z [[32minfo[39m]: Creating message: 44
+2024-08-13T11:59:43.040Z [[32minfo[39m]: Message saved: 44
+2024-08-13T11:59:44.374Z [[32minfo[39m]: Angelica left the room: Relinars-project-1
+2024-08-13T11:59:44.708Z [[32minfo[39m]: A user connected
+2024-08-13T11:59:47.940Z [[32minfo[39m]: A user connected
+2024-08-13T11:59:54.830Z [[32minfo[39m]: milan joined room: 1
+2024-08-13T12:06:32.146Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-13T12:06:32.160Z [[32minfo[39m]: Server is running on port 5000
+2024-08-13T12:06:32.424Z [[32minfo[39m]: A user connected
+2024-08-13T12:06:35.713Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-13T12:06:35.725Z [[32minfo[39m]: Server is running on port 5000
+2024-08-13T12:06:39.002Z [[32minfo[39m]: A user connected
+2024-08-13T12:06:54.081Z [[32minfo[39m]: A user connected
+2024-08-13T12:06:59.276Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-13T12:07:05.425Z [[32minfo[39m]: Message received: 44
+2024-08-13T12:07:05.495Z [[32minfo[39m]: Creating message: 44
+2024-08-13T12:07:05.558Z [[32minfo[39m]: Message saved: 44
+2024-08-13T12:07:09.991Z [[32minfo[39m]: Message received: 44
+2024-08-13T12:07:09.995Z [[32minfo[39m]: Creating message: 44
+2024-08-13T12:07:10.069Z [[32minfo[39m]: Message saved: 44
+2024-08-13T12:07:14.102Z [[32minfo[39m]: Message received: 66
+2024-08-13T12:07:14.146Z [[32minfo[39m]: Creating message: 66
+2024-08-13T12:07:14.189Z [[32minfo[39m]: Message saved: 66
+2024-08-13T12:07:15.626Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T12:07:15.672Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T12:07:16.408Z [[31merror[39m]: Error deleting message: Invalid message ID
+2024-08-13T12:07:33.410Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T12:07:33.455Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T12:07:34.635Z [[31merror[39m]: Error deleting message: Invalid message ID
+2024-08-13T12:07:35.219Z [[31merror[39m]: Error deleting message: Invalid message ID
+2024-08-13T12:07:44.809Z [[32minfo[39m]: Message received: 55
+2024-08-13T12:07:44.845Z [[32minfo[39m]: Creating message: 55
+2024-08-13T12:07:44.890Z [[32minfo[39m]: Message saved: 55
+2024-08-13T12:08:49.392Z [[32minfo[39m]: Message received: 55
+2024-08-13T12:08:49.446Z [[32minfo[39m]: Creating message: 55
+2024-08-13T12:08:49.497Z [[32minfo[39m]: Message saved: 55
+2024-08-13T12:08:52.486Z [[32minfo[39m]: Message received: 44
+2024-08-13T12:08:52.507Z [[32minfo[39m]: Creating message: 44
+2024-08-13T12:08:52.548Z [[32minfo[39m]: Message saved: 44
+2024-08-13T12:09:45.307Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-13T12:09:45.314Z [[32minfo[39m]: Server is running on port 5000
+2024-08-13T12:09:45.435Z [[32minfo[39m]: A user connected
+2024-08-13T12:09:52.893Z [[32minfo[39m]: A user connected
+2024-08-13T12:09:56.567Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-13T12:09:58.237Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T12:09:58.284Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T12:09:58.938Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T12:09:58.986Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T12:09:59.671Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T12:09:59.715Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T12:10:00.274Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T12:10:00.319Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T12:10:02.993Z [[32minfo[39m]: Message received: 55
+2024-08-13T12:10:03.027Z [[32minfo[39m]: Creating message: 55
+2024-08-13T12:10:03.088Z [[32minfo[39m]: Message saved: 55
+2024-08-13T12:10:04.326Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T12:10:04.371Z [[32minfo[39m]: Deleted message with ID:
+2024-08-13T12:10:15.427Z [[32minfo[39m]: Angelica left the room: 1
+2024-08-13T12:10:16.449Z [[32minfo[39m]: A user connected
+2024-08-13T12:10:18.825Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-13T12:10:21.842Z [[32minfo[39m]: Message received: 55
+2024-08-13T12:10:21.849Z [[32minfo[39m]: Creating message: 55
+2024-08-13T12:10:21.906Z [[32minfo[39m]: Message saved: 55
+2024-08-13T12:10:25.097Z [[32minfo[39m]: Deleting message with ID:
+2024-08-13T12:10:25.149Z [[32minfo[39m]: Deleted message with ID:

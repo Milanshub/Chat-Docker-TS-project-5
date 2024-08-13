@@ -6,7 +6,7 @@ export const setupSocketIO = (server: any) => {
     const io = new Server(server, {
         cors: {
             origin: "http://localhost:3000", // Your frontend's origin
-            methods: ["GET", "POST"]
+            methods: ["GET", "POST", "DELETE"]
         }
     });
 
