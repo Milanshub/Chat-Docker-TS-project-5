@@ -15,7 +15,7 @@
   },
   "include": [
     "src/**/*"
-  ],
+, "next.config.js"  ],
   "exclude": [
     "node_modules",
     "dist"

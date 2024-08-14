@@ -1,5 +1,3 @@
-// src/components/RoomSelection.tsx
-
 import React, { useState } from "react";
 import { TextField, Button, Container, Typography } from "@mui/material";
 import { RoomSelectionProps } from "../models/RoomSelectionProps";

@@ -1,9 +1,9 @@
-
 export interface IMessage {
+    _id: string; // MongoDB ObjectId as string
     user: string;
-    message: string; 
-    type?: 'text' | 'image' | 'file'; // Type property of message 
+    message: string;
+    type?: 'text' | 'image' | 'file';
     room: string;
-    createdAt?: Date;
-    updatedAt?: Date; 
+    createdAt?: string;
+    updatedAt?: string;
 }

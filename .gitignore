@@ -14,7 +14,6 @@
 
 # misc
 .combined.log
-.env
 .DS_Store
 .env.local
 .env.development.local

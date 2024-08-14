@@ -1,32 +1,33 @@
-// src/pages/ChatPage.tsx
-
 import React, { useEffect, useState } from 'react';
 import { io, Socket } from 'socket.io-client';
-import { TextField, Button, List, ListItem, ListItemText, Container, Typography } from '@mui/material';
+import { TextField, Button, List, ListItem, ListItemText, Container, Typography, IconButton } from '@mui/material';
+import DeleteIcon from '@mui/icons-material/Delete';
 import log from '../utils/logger';
-import { fetchMessages, createMessage } from '../services/chatService';
+import { fetchMessages, createMessage, deleteMessage } from '../services/chatService';
+import { INewMessage } from '../models/INewMessage';
 import { IMessage } from '../models/IMessage';
 import RoomSelection from '../components/RoomSelection';
 import '../App.css';
+
 
 const socket: Socket = io('http://localhost:5000', {
     transports: ["websocket"],
 });
 
 const ChatPage: React.FC = () => {
-    const [username, setUsername] = useState<string>('');
-    const [message, setMessage] = useState<string>('');
-    const [messages, setMessages] = useState<IMessage[]>([]);
+    const [username, setUsername] = useState<string>(''); 
+    const [message, setMessage] = useState<string>(''); 
+    const [messages, setMessages] = useState<IMessage[]>([]); 
     const [isInRoom, setIsInRoom] = useState<boolean>(false);
-    const [room, setRoom] = useState<string>('default-room');
+    const [room, setRoom] = useState<string>('default-room'); 
 
     useEffect(() => {
-        log.info('ChatPage component mounted');
+        console.log('ChatPage component mounted');
 
         const loadMessages = async () => {
-            if (room) { // Ensure room is defined before fetching messages
+            if (room) {
                 try {
-                    const initialMessages = await fetchMessages(room); // Pass room here
+                    const initialMessages = await fetchMessages(room);
                     setMessages(initialMessages);
                 } catch (error) {
                     log.error('Error loading messages:', error);
@@ -37,43 +38,73 @@ const ChatPage: React.FC = () => {
         loadMessages();
 
         if (isInRoom) {
-            // Listen for 'message' event from the server
-            socket.on('message', (msg: IMessage) => {
-                log.info('Received message:', msg);
-                setMessages((prevMessages) => [...prevMessages, msg]);
-            });
+            const messageListener = (msg: IMessage) => {
+                console.log('Received message:', msg);
+                
+                // Ensure that messages with undefined or null IDs are not added
+                if (!msg._id) {
+                    console.error('Received message with undefined ID:', msg);
+                    return;
+                }
 
+                setMessages((prevMessages) => {
+                    // Avoid adding duplicate messages
+                    const messageExists = prevMessages.some(m => m._id === msg._id);
+                    if (!messageExists) {
+                        return [...prevMessages, msg];
+                    }
+                    return prevMessages;
+                });
+            };
+    
+            socket.on('message', messageListener);
+    
             return () => {
-                socket.off('message');
-                log.info('ChatPage component unmounted');
+                console.log('Cleaning up socket listener and connection');
+                socket.off('message', messageListener);
+                socket.disconnect();  // Ensure we disconnect to prevent multiple connections
+                console.log('ChatPage component unmounted');
             };
         }
-    }, [isInRoom, room]); // Add room as a dependency
+    }, [isInRoom, room]);
 
     const handleJoinRoom = (username: string, room: string) => {
         setUsername(username);
         setRoom(room);
         setIsInRoom(true);
-
-        // Emit the joinRoom event
         socket.emit('joinRoom', { username, room });
     };
 
     const handleSendMessage = async () => {
-        if (message.trim() && username.trim() && room) { // Ensure room is also checked
-            const newMessage: IMessage = {
+        if (message.trim() && username.trim() && room) {
+            const newMessage: INewMessage = {
                 user: username,
                 message,
-                type: 'text', // Default type
-                room // Ensure room is included
+                type: 'text',
+                room
             };
 
             try {
                 console.log('Sending message:', newMessage);
+
                 socket.emit('message', newMessage);
 
-                const response = await createMessage(newMessage.user, newMessage.message, newMessage.type, newMessage.room); // Pass room here
+                const response = await createMessage(newMessage.user, newMessage.message, newMessage.type, newMessage.room);
+
                 console.log('Message saved response:', response);
+
+                // Check for the ID before adding the message to the state
+                if (response && response._id) {
+                    setMessages((prevMessages) => {
+                        if (!prevMessages.find(m => m._id === response._id)) {
+                            return [...prevMessages, response];
+                        }
+                        return prevMessages;
+                    });
+                } else {
+                    console.error('Received response with undefined ID:', response);
+                }
+
                 setMessage('');
             } catch (error) {
                 console.error('Error sending message:', error);
@@ -83,6 +114,28 @@ const ChatPage: React.FC = () => {
         }
     };
 
+    const handleDeleteMessage = async (id: string) => {
+        if (!id) {
+            console.error("Message ID is not defined.");
+            return;
+        }
+
+        try {
+            await deleteMessage(id);
+            console.log(`Message with ID: ${id} deleted.`);
+            setMessages((prevMessages) => prevMessages.filter(msg => msg._id !== id));
+        } catch (error) {
+            console.error('Error deleting message:', error);
+        }
+    };
+
+    const handleBackToRoomSelection = () => {
+        setIsInRoom(false);
+        setMessages([]); // Clear messages when leaving the room
+        setUsername(''); // Clear username
+        setRoom(''); // Clear room
+    };
+
     return (
         <div className="app-container">
             {!isInRoom ? (
@@ -90,12 +143,21 @@ const ChatPage: React.FC = () => {
             ) : (
                 <Container className="chat-container">
                     <Typography variant="h5" gutterBottom>Room: {room}</Typography>
+                    <Button onClick={handleBackToRoomSelection} variant="outlined" color="secondary">
+                        Back
+                    </Button>
                     <List className="message-list">
-                        {messages.map((msg, index) => (
-                            <ListItem key={index} className="message-list-item">
-                                <ListItemText primary={msg.message} secondary={`User: ${msg.user} | Type: ${msg.type}`} />
-                            </ListItem>
-                        ))}
+                        {messages.map((msg) => {
+                            console.log('Message ID:', msg._id); // Debugging output
+                            return (
+                                <ListItem key={msg._id} className="message-list-item">
+                                    <ListItemText primary={msg.message} secondary={`User: ${msg.user} | Type: ${msg.type} | ID: ${msg._id}`} />
+                                    <IconButton edge="end" aria-label="delete" onClick={() => handleDeleteMessage(msg._id)}>
+                                        <DeleteIcon />
+                                    </IconButton>
+                                </ListItem>
+                            );
+                        })}
                     </List>
                     <div className="message-input-container">
                         <TextField

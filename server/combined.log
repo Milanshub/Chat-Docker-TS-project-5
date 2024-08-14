@@ -807,3 +807,6 @@
 2024-08-13T12:10:21.906Z [[32minfo[39m]: Message saved: 55
 2024-08-13T12:10:25.097Z [[32minfo[39m]: Deleting message with ID:
 2024-08-13T12:10:25.149Z [[32minfo[39m]: Deleted message with ID:
+2024-08-14T10:50:01.610Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-14T10:50:01.623Z [[32minfo[39m]: Server is running on port 5000
+2024-08-14T10:54:07.541Z [[32minfo[39m]: A user connected

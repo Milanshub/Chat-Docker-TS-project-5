@@ -1,10 +1,8 @@
-// src/services/chatService.ts
-
 import axios from 'axios';
-import log from '../utils/logger'; 
-import { IMessage } from '../models/IMessage'; 
+import log from '../utils/logger';
+import { IMessage } from '../models/IMessage';
 
-const REACT_APP_API_URL = 'http://localhost:5000/api'; 
+const REACT_APP_API_URL = 'http://localhost:5000/api';
 
 const defaultHeaders = {
     'Content-Type': 'application/json',
@@ -16,7 +14,7 @@ export const fetchMessages = async (room: string): Promise<IMessage[]> => {
     try {
         const response = await axios.get(`${REACT_APP_API_URL}/messages`, {
             headers: defaultHeaders,
-            params: { room } // Pass room as a query parameter
+            params: { room }
         });
         return response.data;
     } catch (error) {
@@ -29,8 +27,8 @@ export const fetchMessages = async (room: string): Promise<IMessage[]> => {
 export const createMessage = async (
     user: string, 
     message: string, 
-    type: 'text' | 'image' | 'file' = 'text', // Default type if not provided
-    room: string // room must be provided
+    type: 'text' | 'image' | 'file' = 'text',
+    room: string
 ): Promise<IMessage> => {
     try {
         const response = await axios.post(`${REACT_APP_API_URL}/messages`, { user, message, type, room }, { headers: defaultHeaders });
@@ -65,6 +63,9 @@ export const updateMessage = async (id: string, updates: Partial<IMessage>): Pro
 
 // Delete a message by ID
 export const deleteMessage = async (id: string): Promise<void> => {
+    if (!id) {
+        throw new Error('Message ID is required');
+    }
     try {
         await axios.delete(`${REACT_APP_API_URL}/messages/${id}`, { headers: defaultHeaders });
     } catch (error) {

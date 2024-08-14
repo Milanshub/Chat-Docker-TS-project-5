@@ -1,0 +1,24 @@
+
+services:
+  server: 
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - PORT=${PORT}
+    env_file:
+      - ./server/.env
+    volumes:
+      - ./server:/app
+    
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
