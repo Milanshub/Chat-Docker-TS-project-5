@@ -1,23 +1,19 @@
-
 services:
-  server: 
+  server:
     build:
-      context: ./server
-      dockerfile: Dockerfile
+      context: ./server  # This points to the server directory
+      dockerfile: Dockerfile  # Ensure the correct Dockerfile name
     ports:
       - "5000:5000"
-    environment:
-      - MONGO_URI=${MONGO_URI}
-      - PORT=${PORT}
     env_file:
-      - ./server/.env
+      - ./server/.env  # Reference the .env file inside the server directory
     volumes:
       - ./server:/app
     
   client:
     build:
-      context: ./client
-      dockerfile: Dockerfile
+      context: ./client  # This points to the client directory
+      dockerfile: Dockerfile  # Ensure the correct Dockerfile name
     ports:
       - "3000:80"
     depends_on:

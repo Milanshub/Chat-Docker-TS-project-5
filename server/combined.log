@@ -810,3 +810,62 @@
 2024-08-14T10:50:01.610Z [[32minfo[39m]: Connected to MongoDB Atlas
 2024-08-14T10:50:01.623Z [[32minfo[39m]: Server is running on port 5000
 2024-08-14T10:54:07.541Z [[32minfo[39m]: A user connected
+2024-08-19T17:55:54.887Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-19T17:55:54.896Z [[32minfo[39m]: Server is running on port 5000
+2024-08-19T17:55:59.180Z [[32minfo[39m]: A user connected
+2024-08-19T17:56:14.758Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-19T17:56:14.766Z [[32minfo[39m]: Server is running on port 5000
+2024-08-19T17:56:17.347Z [[32minfo[39m]: A user connected
+2024-08-19T17:56:25.856Z [[32minfo[39m]: Angelica joined room: 1
+2024-08-19T17:56:27.628Z [[32minfo[39m]: Message received: 44
+2024-08-19T17:56:27.656Z [[32minfo[39m]: Creating message: 44
+2024-08-19T17:56:27.712Z [[32minfo[39m]: Message saved: 44
+2024-08-19T17:56:29.103Z [[32minfo[39m]: Deleting message with ID:
+2024-08-19T17:56:29.153Z [[32minfo[39m]: Deleted message with ID:
+2024-08-19T17:56:31.238Z [[32minfo[39m]: Message received: 44
+2024-08-19T17:56:31.241Z [[32minfo[39m]: Creating message: 44
+2024-08-19T17:56:31.289Z [[32minfo[39m]: Message saved: 44
+2024-08-19T17:56:33.385Z [[32minfo[39m]: Message received: 55
+2024-08-19T17:56:33.388Z [[32minfo[39m]: Creating message: 55
+2024-08-19T17:56:33.431Z [[32minfo[39m]: Message saved: 55
+2024-08-19T17:56:47.114Z [[32minfo[39m]: Deleting message with ID:
+2024-08-19T17:56:47.155Z [[32minfo[39m]: Deleted message with ID:
+2024-08-19T17:56:47.799Z [[32minfo[39m]: Deleting message with ID:
+2024-08-19T17:56:47.889Z [[32minfo[39m]: Deleted message with ID:
+2024-08-20T11:08:44.307Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-20T11:08:44.324Z [[32minfo[39m]: Server is running on port 5000
+2024-08-20T11:08:51.074Z [[32minfo[39m]: A user connected
+2024-08-20T11:09:10.769Z [[32minfo[39m]: A user connected
+2024-08-20T11:09:15.428Z [[32minfo[39m]: milan joined room: mi
+2024-08-20T11:09:17.671Z [[32minfo[39m]: Message received: html-portfolio
+2024-08-20T11:09:17.694Z [[32minfo[39m]: Creating message: html-portfolio
+2024-08-20T11:09:17.757Z [[32minfo[39m]: Message saved: html-portfolio
+2024-08-20T11:09:20.178Z [[32minfo[39m]: Message received: story
+2024-08-20T11:09:20.181Z [[32minfo[39m]: Creating message: story
+2024-08-20T11:09:20.233Z [[32minfo[39m]: Message saved: story
+2024-08-20T11:09:22.488Z [[32minfo[39m]: Deleting message with ID:
+2024-08-20T11:09:22.539Z [[32minfo[39m]: Deleted message with ID:
+2024-08-20T11:09:23.137Z [[32minfo[39m]: Deleting message with ID:
+2024-08-20T11:09:23.184Z [[32minfo[39m]: Deleted message with ID:
+2024-08-20T11:09:25.193Z [[32minfo[39m]: Message received: html-portfolio
+2024-08-20T11:09:25.198Z [[32minfo[39m]: Creating message: html-portfolio
+2024-08-20T11:09:25.249Z [[32minfo[39m]: Message saved: html-portfolio
+2024-08-20T11:09:42.301Z [[32minfo[39m]: Deleting message with ID:
+2024-08-20T11:09:42.353Z [[32minfo[39m]: Deleted message with ID:
+2024-08-20T11:23:36.190Z [[32minfo[39m]: milan left the room: mi
+2024-08-20T11:23:37.510Z [[32minfo[39m]: A user connected
+2024-08-20T11:23:37.524Z [[32minfo[39m]: A user connected
+2024-08-20T11:23:52.512Z [[32minfo[39m]: A user connected
+2024-08-20T11:23:53.521Z [[32minfo[39m]: A user connected
+2024-08-20T11:41:17.305Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-08-20T11:41:17.321Z [[32minfo[39m]: Server is running on port 5000
+2024-08-20T11:41:19.216Z [[32minfo[39m]: A user connected
+2024-08-20T11:41:24.654Z [[32minfo[39m]: A user connected
+2024-08-20T11:58:18.931Z [[32minfo[39m]: A user connected
+2024-08-20T11:58:27.544Z [[32minfo[39m]: milan joined room: mi
+2024-08-20T11:58:29.961Z [[32minfo[39m]: Message received: html-portfolio
+2024-08-20T11:58:30.030Z [[32minfo[39m]: Creating message: html-portfolio
+2024-08-20T11:58:30.107Z [[32minfo[39m]: Message saved: html-portfolio
+2024-08-20T11:58:32.504Z [[32minfo[39m]: Message received: story
+2024-08-20T11:58:32.507Z [[32minfo[39m]: Creating message: story
+2024-08-20T11:58:32.552Z [[32minfo[39m]: Message saved: story
