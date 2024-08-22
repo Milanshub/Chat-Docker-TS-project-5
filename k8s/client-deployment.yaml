@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-deployment
+  namespace: chat-demo-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: client
+  template:
+    metadata:
+      labels:
+        app: client
+    spec:
+      containers:
+        - name: client
+          image: milanshub/client-chat-demo:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: PORT
+              value: "80"

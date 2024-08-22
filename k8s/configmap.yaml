@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: app-config
+  namespace: chat-demo-app
+data: 
+  PORT: "5000"
