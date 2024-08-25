@@ -9,21 +9,22 @@ import { IMessage } from '../models/IMessage';
 import RoomSelection from '../components/RoomSelection';
 import '../App.css';
 
-
+// Initialize a Socket.IO client instance
 const socket: Socket = io('http://localhost:5000', {
     transports: ["websocket"],
 });
 
 const ChatPage: React.FC = () => {
-    const [username, setUsername] = useState<string>(''); 
-    const [message, setMessage] = useState<string>(''); 
-    const [messages, setMessages] = useState<IMessage[]>([]); 
-    const [isInRoom, setIsInRoom] = useState<boolean>(false);
-    const [room, setRoom] = useState<string>('default-room'); 
+    const [username, setUsername] = useState<string>(''); // State for the username
+    const [message, setMessage] = useState<string>(''); // State for the message input
+    const [messages, setMessages] = useState<IMessage[]>([]); // State for the list of messages
+    const [isInRoom, setIsInRoom] = useState<boolean>(false); // State to check if the user is in a room
+    const [room, setRoom] = useState<string>('default-room'); // State for the room name
 
     useEffect(() => {
         console.log('ChatPage component mounted');
 
+        // Function to load initial messages for the current room
         const loadMessages = async () => {
             if (room) {
                 try {
@@ -35,9 +36,10 @@ const ChatPage: React.FC = () => {
             }
         };
 
-        loadMessages();
+        loadMessages(); // Load messages when the component mounts
 
         if (isInRoom) {
+            // Listener for incoming messages from the server
             const messageListener = (msg: IMessage) => {
                 console.log('Received message:', msg);
                 
@@ -68,6 +70,7 @@ const ChatPage: React.FC = () => {
         }
     }, [isInRoom, room]);
 
+    // Handle the event when the user joins a room
     const handleJoinRoom = (username: string, room: string) => {
         setUsername(username);
         setRoom(room);

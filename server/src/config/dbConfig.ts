@@ -4,8 +4,10 @@ import { logger } from '../utils/logger';
 
 dotenv.config();
 
+// URI to Mongodb Atlas saved as an env 
 const uri = process.env.MONGODB_URI!;
 
+// connecting to URI and logging connection
 export const connectToMongoDb = async () => {
     try {
         await mongoose.connect(uri, {

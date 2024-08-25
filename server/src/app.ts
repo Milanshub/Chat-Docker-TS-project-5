@@ -29,7 +29,7 @@ connectToMongoDb()
         const io = setupSocketIO(server);
 
         // Define routes
-        app.use('/api', router); // Prefix your API routes with /api
+        app.use('/api', router); // Prefix API routes with /api
 
         // Error handling middleware
         app.use(errorHandling);

@@ -14,12 +14,12 @@ export const fetchMessages = async (room: string): Promise<IMessage[]> => {
     try {
         const response = await axios.get(`${REACT_APP_API_URL}/messages`, {
             headers: defaultHeaders,
-            params: { room }
+            params: { room } // Send the room name as a query parameter
         });
-        return response.data;
+        return response.data; // Return the fetched messages
     } catch (error) {
         log.error('Error fetching messages:', error);
-        throw error;
+        throw error; // Throw the error to be handled by the caller
     }
 };
 
@@ -32,10 +32,10 @@ export const createMessage = async (
 ): Promise<IMessage> => {
     try {
         const response = await axios.post(`${REACT_APP_API_URL}/messages`, { user, message, type, room }, { headers: defaultHeaders });
-        return response.data;
+        return response.data; // Return the created message
     } catch (error) {
         log.error('Error creating message:', error);
-        throw error;
+        throw error; // Throw the error to be handled by the caller
     }
 };
 
@@ -43,10 +43,10 @@ export const createMessage = async (
 export const fetchMessageById = async (id: string): Promise<IMessage> => {
     try {
         const response = await axios.get(`${REACT_APP_API_URL}/messages/${id}`, { headers: defaultHeaders });
-        return response.data;
+        return response.data; // Return the fetched message
     } catch (error) {
         log.error(`Error fetching message with ID ${id}:`, error);
-        throw error;
+        throw error; // Throw the error to be handled by the caller
     }
 };
 
@@ -54,22 +54,22 @@ export const fetchMessageById = async (id: string): Promise<IMessage> => {
 export const updateMessage = async (id: string, updates: Partial<IMessage>): Promise<IMessage> => {
     try {
         const response = await axios.put(`${REACT_APP_API_URL}/messages/${id}`, updates, { headers: defaultHeaders });
-        return response.data;
+        return response.data; // Return the updated message
     } catch (error) {
         log.error(`Error updating message with ID ${id}:`, error);
-        throw error;
+        throw error; // Throw the error to be handled by the caller
     }
 };
 
 // Delete a message by ID
 export const deleteMessage = async (id: string): Promise<void> => {
     if (!id) {
-        throw new Error('Message ID is required');
+        throw new Error('Message ID is required'); // Ensure ID is provided
     }
     try {
         await axios.delete(`${REACT_APP_API_URL}/messages/${id}`, { headers: defaultHeaders });
     } catch (error) {
         log.error(`Error deleting message with ID ${id}:`, error);
-        throw error;
+        throw error; // Throw the error to be handled by the caller
     }
 };

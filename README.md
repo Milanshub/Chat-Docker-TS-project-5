@@ -25,6 +25,8 @@ Before you start, ensure you have the following installed:
 5. **Docker Compose**: Not installed
    - To install Docker Compose, follow the instructions at [docker.com](https://docs.docker.com/compose/install/).
 
+
+
 ## Build and Deploy Locally Without Docker
 
 1. **Clone the Repository**:
@@ -51,12 +53,16 @@ Before you start, ensure you have the following installed:
     cd ../client
     npm start
 
+
+
 ## Build and Deploy Locally with Docker Compose
 
 1. **Ensure Docker and Docker Compose are Installed.**
 
 2. **Build and Start the Application**:
     docker-compose up --build
+
+
 
 ## Kubernetes deployment 
 
